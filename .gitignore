@@ -1,0 +1,5 @@
+Android.mk
+bin
+gen
+Session.vim
+tags
