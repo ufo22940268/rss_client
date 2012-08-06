@@ -1,0 +1,6 @@
+# view res/layout/main.xml #generated:8
+-keep class com.handmark.pulltorefresh.library.PullToRefreshListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:8
+-keep class hongbosb.tbdemo.MainActivity { <init>(...); }
+

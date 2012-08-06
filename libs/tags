@@ -1,0 +1,332 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ANIMATION_DELAY	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		static final int ANIMATION_DELAY = 10;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable
+ANIMATION_DURATION_MS	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		static final int ANIMATION_DURATION_MS = 300;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable
+ANIMATION_OVERSHOOT_TENSION	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		static final float ANIMATION_OVERSHOOT_TENSION = 2.0f;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable
+BOTH	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		BOTH(0x3);$/;"	e	enum:PullToRefreshBase.Mode	file:
+BuildConfig	gen/com/handmark/pulltorefresh/library/BuildConfig.java	/^public final class BuildConfig {$/;"	c
+DEBUG	gen/com/handmark/pulltorefresh/library/BuildConfig.java	/^    public final static boolean DEBUG = true;$/;"	f	class:BuildConfig
+DEBUG	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final boolean DEBUG = false;$/;"	f	class:PullToRefreshBase
+DEFAULT_MODE	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final Mode DEFAULT_MODE = Mode.PULL_DOWN_TO_REFRESH;$/;"	f	class:PullToRefreshBase
+DEFAULT_ROTATION_ANIMATION_DURATION	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	static final int DEFAULT_ROTATION_ANIMATION_DURATION = 150;$/;"	f	class:IndicatorLayout
+DEFAULT_ROTATION_ANIMATION_DURATION	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	static final int DEFAULT_ROTATION_ANIMATION_DURATION = 600;$/;"	f	class:LoadingLayout
+DEFAULT_SHOW_INDICATOR	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	static final boolean DEFAULT_SHOW_INDICATOR = true;$/;"	f	class:PullToRefreshAdapterViewBase
+DISABLED	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		DISABLED(0x0),$/;"	e	enum:PullToRefreshBase.Mode	file:
+EmptyViewMethodAccessor	src/com/handmark/pulltorefresh/library/internal/EmptyViewMethodAccessor.java	/^public interface EmptyViewMethodAccessor {$/;"	i
+FRICTION	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final float FRICTION = 2.0f;$/;"	f	class:PullToRefreshBase
+IndicatorLayout	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	public IndicatorLayout(Context context, PullToRefreshBase.Mode mode) {$/;"	m	class:IndicatorLayout
+IndicatorLayout	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^public class IndicatorLayout extends FrameLayout implements AnimationListener {$/;"	c
+InternalExpandableListView	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^		public InternalExpandableListView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshExpandableListView.InternalExpandableListView
+InternalExpandableListView	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^	class InternalExpandableListView extends ExpandableListView implements EmptyViewMethodAccessor {$/;"	c	class:PullToRefreshExpandableListView
+InternalGridView	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^		public InternalGridView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshGridView.InternalGridView
+InternalGridView	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^	class InternalGridView extends GridView implements EmptyViewMethodAccessor {$/;"	c	class:PullToRefreshGridView
+InternalListView	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^		public InternalListView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshListView.InternalListView
+InternalListView	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	class InternalListView extends ListView implements EmptyViewMethodAccessor {$/;"	c	class:PullToRefreshListView
+LOG_TAG	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final String LOG_TAG = "PullToRefresh";$/;"	f	class:PullToRefreshBase
+LoadingLayout	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public LoadingLayout(Context context, final Mode mode, TypedArray attrs) {$/;"	m	class:LoadingLayout
+LoadingLayout	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^public class LoadingLayout extends FrameLayout {$/;"	c
+MANUAL_REFRESHING	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final int MANUAL_REFRESHING = 0x3;$/;"	f	class:PullToRefreshBase
+Mode	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		Mode(int modeInt) {$/;"	m	class:PullToRefreshBase.Mode
+Mode	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public static enum Mode {$/;"	g	class:PullToRefreshBase
+OnLastItemVisibleListener	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public static interface OnLastItemVisibleListener {$/;"	i	class:PullToRefreshBase
+OnRefreshListener	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public static interface OnRefreshListener<V extends View> {$/;"	i	class:PullToRefreshBase
+OnRefreshListener2	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public static interface OnRefreshListener2<V extends View> {$/;"	i	class:PullToRefreshBase
+PULL_DOWN_TO_REFRESH	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		PULL_DOWN_TO_REFRESH(0x1),$/;"	e	enum:PullToRefreshBase.Mode	file:
+PULL_TO_REFRESH	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final int PULL_TO_REFRESH = 0x0;$/;"	f	class:PullToRefreshBase
+PULL_UP_TO_REFRESH	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		PULL_UP_TO_REFRESH(0x2),$/;"	e	enum:PullToRefreshBase.Mode	file:
+PullToRefresh	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int[] PullToRefresh = {$/;"	f	class:R.styleable
+PullToRefreshAdapterViewBase	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public PullToRefreshAdapterViewBase(Context context) {$/;"	m	class:PullToRefreshAdapterViewBase
+PullToRefreshAdapterViewBase	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public PullToRefreshAdapterViewBase(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshAdapterViewBase
+PullToRefreshAdapterViewBase	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public PullToRefreshAdapterViewBase(Context context, Mode mode) {$/;"	m	class:PullToRefreshAdapterViewBase
+PullToRefreshAdapterViewBase	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^public abstract class PullToRefreshAdapterViewBase<T extends AbsListView> extends PullToRefreshBase<T> implements$/;"	c
+PullToRefreshBase	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public PullToRefreshBase(Context context) {$/;"	m	class:PullToRefreshBase
+PullToRefreshBase	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public PullToRefreshBase(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshBase
+PullToRefreshBase	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public PullToRefreshBase(Context context, Mode mode) {$/;"	m	class:PullToRefreshBase
+PullToRefreshBase	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^public abstract class PullToRefreshBase<T extends View> extends LinearLayout {$/;"	c
+PullToRefreshExpandableListView	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^	public PullToRefreshExpandableListView(Context context) {$/;"	m	class:PullToRefreshExpandableListView
+PullToRefreshExpandableListView	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^	public PullToRefreshExpandableListView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshExpandableListView
+PullToRefreshExpandableListView	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^	public PullToRefreshExpandableListView(Context context, Mode mode) {$/;"	m	class:PullToRefreshExpandableListView
+PullToRefreshExpandableListView	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^public class PullToRefreshExpandableListView extends PullToRefreshAdapterViewBase<ExpandableListView> {$/;"	c
+PullToRefreshGridView	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^	public PullToRefreshGridView(Context context) {$/;"	m	class:PullToRefreshGridView
+PullToRefreshGridView	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^	public PullToRefreshGridView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshGridView
+PullToRefreshGridView	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^	public PullToRefreshGridView(Context context, Mode mode) {$/;"	m	class:PullToRefreshGridView
+PullToRefreshGridView	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^public class PullToRefreshGridView extends PullToRefreshAdapterViewBase<GridView> {$/;"	c
+PullToRefreshListView	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	public PullToRefreshListView(Context context) {$/;"	m	class:PullToRefreshListView
+PullToRefreshListView	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	public PullToRefreshListView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshListView
+PullToRefreshListView	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	public PullToRefreshListView(Context context, Mode mode) {$/;"	m	class:PullToRefreshListView
+PullToRefreshListView	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView> {$/;"	c
+PullToRefreshWebView	src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^	public PullToRefreshWebView(Context context) {$/;"	m	class:PullToRefreshWebView
+PullToRefreshWebView	src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^	public PullToRefreshWebView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshWebView
+PullToRefreshWebView	src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^	public PullToRefreshWebView(Context context, Mode mode) {$/;"	m	class:PullToRefreshWebView
+PullToRefreshWebView	src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^public class PullToRefreshWebView extends PullToRefreshBase<WebView> {$/;"	c
+PullToRefresh_ptrAdapterViewBackground	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int PullToRefresh_ptrAdapterViewBackground = 0;$/;"	f	class:R.styleable
+PullToRefresh_ptrDrawable	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int PullToRefresh_ptrDrawable = 6;$/;"	f	class:R.styleable
+PullToRefresh_ptrHeaderBackground	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int PullToRefresh_ptrHeaderBackground = 1;$/;"	f	class:R.styleable
+PullToRefresh_ptrHeaderSubTextColor	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int PullToRefresh_ptrHeaderSubTextColor = 3;$/;"	f	class:R.styleable
+PullToRefresh_ptrHeaderTextColor	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int PullToRefresh_ptrHeaderTextColor = 2;$/;"	f	class:R.styleable
+PullToRefresh_ptrMode	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int PullToRefresh_ptrMode = 4;$/;"	f	class:R.styleable
+PullToRefresh_ptrShowIndicator	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int PullToRefresh_ptrShowIndicator = 5;$/;"	f	class:R.styleable
+R	gen/com/handmark/pulltorefresh/library/R.java	/^public final class R {$/;"	c
+REFRESHING	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final int REFRESHING = 0x2;$/;"	f	class:PullToRefreshBase
+RELEASE_TO_REFRESH	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final int RELEASE_TO_REFRESH = 0x1;$/;"	f	class:PullToRefreshBase
+STATE_CURRENT_MODE	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final String STATE_CURRENT_MODE = "ptr_current_mode";$/;"	f	class:PullToRefreshBase
+STATE_DISABLE_SCROLLING_REFRESHING	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final String STATE_DISABLE_SCROLLING_REFRESHING = "ptr_disable_scrolling";$/;"	f	class:PullToRefreshBase
+STATE_MODE	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final String STATE_MODE = "ptr_mode";$/;"	f	class:PullToRefreshBase
+STATE_SHOW_REFRESHING_VIEW	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final String STATE_SHOW_REFRESHING_VIEW = "ptr_show_refreshing_view";$/;"	f	class:PullToRefreshBase
+STATE_STATE	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final String STATE_STATE = "ptr_state";$/;"	f	class:PullToRefreshBase
+STATE_SUPER	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final String STATE_SUPER = "ptr_super";$/;"	f	class:PullToRefreshBase
+SmoothScrollRunnable	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public SmoothScrollRunnable(int fromY, int toY) {$/;"	m	class:PullToRefreshBase.SmoothScrollRunnable
+SmoothScrollRunnable	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	final class SmoothScrollRunnable implements Runnable {$/;"	c	class:PullToRefreshBase
+addIndicatorViews	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private void addIndicatorViews() {$/;"	m	class:PullToRefreshAdapterViewBase	file:
+addRefreshableView	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void addRefreshableView(Context context, T refreshableView) {$/;"	m	class:PullToRefreshAdapterViewBase
+addRefreshableView	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void addRefreshableView(Context context, T refreshableView) {$/;"	m	class:PullToRefreshBase
+anim	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class anim {$/;"	c	class:R
+arrow_down	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int arrow_down=0x7f020000;$/;"	f	class:R.drawable
+arrow_up	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int arrow_up=0x7f020001;$/;"	f	class:R.drawable
+attr	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class attr {$/;"	c	class:R
+both	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int both=0x7f050003;$/;"	f	class:R.id
+canPullDown	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		boolean canPullDown() {$/;"	m	class:PullToRefreshBase.Mode
+canPullUp	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		boolean canPullUp() {$/;"	m	class:PullToRefreshBase.Mode
+com.handmark.pulltorefresh.library	gen/com/handmark/pulltorefresh/library/BuildConfig.java	/^package com.handmark.pulltorefresh.library;$/;"	p
+com.handmark.pulltorefresh.library	gen/com/handmark/pulltorefresh/library/R.java	/^package com.handmark.pulltorefresh.library;$/;"	p
+com.handmark.pulltorefresh.library	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^package com.handmark.pulltorefresh.library;$/;"	p
+com.handmark.pulltorefresh.library	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^package com.handmark.pulltorefresh.library;$/;"	p
+com.handmark.pulltorefresh.library	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^package com.handmark.pulltorefresh.library;$/;"	p
+com.handmark.pulltorefresh.library	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^package com.handmark.pulltorefresh.library;$/;"	p
+com.handmark.pulltorefresh.library	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^package com.handmark.pulltorefresh.library;$/;"	p
+com.handmark.pulltorefresh.library	src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^package com.handmark.pulltorefresh.library;$/;"	p
+com.handmark.pulltorefresh.library.internal	src/com/handmark/pulltorefresh/library/internal/EmptyViewMethodAccessor.java	/^package com.handmark.pulltorefresh.library.internal;$/;"	p
+com.handmark.pulltorefresh.library.internal	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^package com.handmark.pulltorefresh.library.internal;$/;"	p
+com.handmark.pulltorefresh.library.internal	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^package com.handmark.pulltorefresh.library.internal;$/;"	p
+createRefreshableView	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected abstract T createRefreshableView(Context context, AttributeSet attrs);$/;"	m	class:PullToRefreshBase
+createRefreshableView	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^	protected final ExpandableListView createRefreshableView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshExpandableListView
+createRefreshableView	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^	protected final GridView createRefreshableView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshGridView
+createRefreshableView	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	protected final ListView createRefreshableView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshListView
+createRefreshableView	src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^	protected WebView createRefreshableView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshWebView
+defaultOnRefreshListener	src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^	private static final OnRefreshListener<WebView> defaultOnRefreshListener = new OnRefreshListener<WebView>() {$/;"	f	class:PullToRefreshWebView	file:
+defaultWebChromeClient	src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^	private final WebChromeClient defaultWebChromeClient = new WebChromeClient() {$/;"	f	class:PullToRefreshWebView	file:
+default_ptr_drawable	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int default_ptr_drawable=0x7f020002;$/;"	f	class:R.drawable
+dimen	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class dimen {$/;"	c	class:R
+disabled	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int disabled=0x7f050000;$/;"	f	class:R.id
+draw	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^		public void draw(Canvas canvas) {$/;"	m	class:PullToRefreshListView.InternalListView
+drawable	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class drawable {$/;"	c	class:R
+getContextMenuInfo	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	abstract public ContextMenuInfo getContextMenuInfo();$/;"	m	class:PullToRefreshAdapterViewBase
+getContextMenuInfo	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^		public ContextMenuInfo getContextMenuInfo() {$/;"	m	class:PullToRefreshExpandableListView.InternalExpandableListView
+getContextMenuInfo	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^	public ContextMenuInfo getContextMenuInfo() {$/;"	m	class:PullToRefreshExpandableListView
+getContextMenuInfo	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^		public ContextMenuInfo getContextMenuInfo() {$/;"	m	class:PullToRefreshGridView.InternalGridView
+getContextMenuInfo	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^	public ContextMenuInfo getContextMenuInfo() {$/;"	m	class:PullToRefreshGridView
+getContextMenuInfo	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^		public ContextMenuInfo getContextMenuInfo() {$/;"	m	class:PullToRefreshListView.InternalListView
+getContextMenuInfo	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	public ContextMenuInfo getContextMenuInfo() {$/;"	m	class:PullToRefreshListView
+getCurrentMode	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final Mode getCurrentMode() {$/;"	m	class:PullToRefreshBase
+getFilterTouchEvents	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean getFilterTouchEvents() {$/;"	m	class:PullToRefreshBase
+getFooterLayout	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected final LoadingLayout getFooterLayout() {$/;"	m	class:PullToRefreshBase
+getHeaderHeight	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected final int getHeaderHeight() {$/;"	m	class:PullToRefreshBase
+getHeaderLayout	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected final LoadingLayout getHeaderLayout() {$/;"	m	class:PullToRefreshBase
+getIntValue	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		int getIntValue() {$/;"	m	class:PullToRefreshBase.Mode
+getMode	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final Mode getMode() {$/;"	m	class:PullToRefreshBase
+getRefreshableView	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final T getRefreshableView() {$/;"	m	class:PullToRefreshBase
+getShowIndicator	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public boolean getShowIndicator() {$/;"	m	class:PullToRefreshAdapterViewBase
+getShowIndicatorInternal	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private boolean getShowIndicatorInternal() {$/;"	m	class:PullToRefreshAdapterViewBase	file:
+getShowViewWhileRefreshing	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean getShowViewWhileRefreshing() {$/;"	m	class:PullToRefreshBase
+getState	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected final int getState() {$/;"	m	class:PullToRefreshBase
+gridview	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int gridview=0x7f050004;$/;"	f	class:R.id
+handleStyledAttributes	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void handleStyledAttributes(TypedArray a) {$/;"	m	class:PullToRefreshAdapterViewBase
+handleStyledAttributes	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void handleStyledAttributes(TypedArray a) {$/;"	m	class:PullToRefreshBase
+hasPullFromTop	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean hasPullFromTop() {$/;"	m	class:PullToRefreshBase
+hide	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	public void hide() {$/;"	m	class:IndicatorLayout
+id	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class id {$/;"	c	class:R
+indicator_bg_bottom	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int indicator_bg_bottom=0x7f020003;$/;"	f	class:R.drawable
+indicator_bg_top	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int indicator_bg_top=0x7f020004;$/;"	f	class:R.drawable
+indicator_corner_radius	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int indicator_corner_radius=0x7f060001;$/;"	f	class:R.dimen
+indicator_internal_padding	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int indicator_internal_padding=0x7f060002;$/;"	f	class:R.dimen
+indicator_right_padding	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int indicator_right_padding=0x7f060000;$/;"	f	class:R.dimen
+init	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private void init(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshBase	file:
+isDisableScrollingWhileRefreshing	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean isDisableScrollingWhileRefreshing() {$/;"	m	class:PullToRefreshBase
+isFirstItemVisible	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private boolean isFirstItemVisible() {$/;"	m	class:PullToRefreshAdapterViewBase	file:
+isLastItemVisible	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private boolean isLastItemVisible() {$/;"	m	class:PullToRefreshAdapterViewBase	file:
+isPullToRefreshEnabled	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean isPullToRefreshEnabled() {$/;"	m	class:PullToRefreshBase
+isReadyForPull	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private boolean isReadyForPull() {$/;"	m	class:PullToRefreshBase	file:
+isReadyForPullDown	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected boolean isReadyForPullDown() {$/;"	m	class:PullToRefreshAdapterViewBase
+isReadyForPullDown	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected abstract boolean isReadyForPullDown();$/;"	m	class:PullToRefreshBase
+isReadyForPullDown	src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^	protected boolean isReadyForPullDown() {$/;"	m	class:PullToRefreshWebView
+isReadyForPullUp	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected boolean isReadyForPullUp() {$/;"	m	class:PullToRefreshAdapterViewBase
+isReadyForPullUp	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected abstract boolean isReadyForPullUp();$/;"	m	class:PullToRefreshBase
+isReadyForPullUp	src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^	protected boolean isReadyForPullUp() {$/;"	m	class:PullToRefreshWebView
+isRefreshing	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean isRefreshing() {$/;"	m	class:PullToRefreshBase
+isVisible	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	public final boolean isVisible() {$/;"	m	class:IndicatorLayout
+layout	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class layout {$/;"	c	class:R
+mAddedLvFooter	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^		private boolean mAddedLvFooter = false;$/;"	f	class:PullToRefreshListView.InternalListView	file:
+mArrowImageView	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	private ImageView mArrowImageView;$/;"	f	class:IndicatorLayout	file:
+mContinueRunning	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		private boolean mContinueRunning = true;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable	file:
+mCurrentMode	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private Mode mCurrentMode;$/;"	f	class:PullToRefreshBase	file:
+mCurrentSmoothScrollRunnable	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private SmoothScrollRunnable mCurrentSmoothScrollRunnable;$/;"	f	class:PullToRefreshBase	file:
+mCurrentY	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		private int mCurrentY = -1;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable	file:
+mDisableScrollingWhileRefreshing	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private boolean mDisableScrollingWhileRefreshing = true;$/;"	f	class:PullToRefreshBase	file:
+mEmptyView	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private View mEmptyView;$/;"	f	class:PullToRefreshAdapterViewBase	file:
+mFilterTouchEvents	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private boolean mFilterTouchEvents = true;$/;"	f	class:PullToRefreshBase	file:
+mFooterLayout	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private LoadingLayout mFooterLayout;$/;"	f	class:PullToRefreshBase	file:
+mFooterLoadingView	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	private LoadingLayout mFooterLoadingView;$/;"	f	class:PullToRefreshListView	file:
+mHeaderHeight	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private int mHeaderHeight;$/;"	f	class:PullToRefreshBase	file:
+mHeaderImage	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private final ImageView mHeaderImage;$/;"	f	class:LoadingLayout	file:
+mHeaderImageMatrix	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private final Matrix mHeaderImageMatrix;$/;"	f	class:LoadingLayout	file:
+mHeaderLayout	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private LoadingLayout mHeaderLayout;$/;"	f	class:PullToRefreshBase	file:
+mHeaderLoadingView	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	private LoadingLayout mHeaderLoadingView;$/;"	f	class:PullToRefreshListView	file:
+mHeaderText	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private final TextView mHeaderText;$/;"	f	class:LoadingLayout	file:
+mInAnim	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	private Animation mInAnim, mOutAnim;$/;"	f	class:IndicatorLayout	file:
+mIndicatorIvBottom	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private IndicatorLayout mIndicatorIvBottom;$/;"	f	class:PullToRefreshAdapterViewBase	file:
+mIndicatorIvTop	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private IndicatorLayout mIndicatorIvTop;$/;"	f	class:PullToRefreshAdapterViewBase	file:
+mInitialMotionY	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private float mInitialMotionY;$/;"	f	class:PullToRefreshBase	file:
+mIntValue	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		private int mIntValue;$/;"	f	class:PullToRefreshBase.Mode	file:
+mInterpolator	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		private final Interpolator mInterpolator;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable	file:
+mIsBeingDragged	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private boolean mIsBeingDragged = false;$/;"	f	class:PullToRefreshBase	file:
+mLastMotionX	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private float mLastMotionX;$/;"	f	class:PullToRefreshBase	file:
+mLastMotionY	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private float mLastMotionY;$/;"	f	class:PullToRefreshBase	file:
+mLvFooterLoadingFrame	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	private FrameLayout mLvFooterLoadingFrame;$/;"	f	class:PullToRefreshListView	file:
+mMode	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private Mode mMode = DEFAULT_MODE;$/;"	f	class:PullToRefreshBase	file:
+mOnLastItemVisibleListener	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private OnLastItemVisibleListener mOnLastItemVisibleListener;$/;"	f	class:PullToRefreshAdapterViewBase	file:
+mOnRefreshListener	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private OnRefreshListener<T> mOnRefreshListener;$/;"	f	class:PullToRefreshBase	file:
+mOnRefreshListener2	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private OnRefreshListener2<T> mOnRefreshListener2;$/;"	f	class:PullToRefreshBase	file:
+mOnScrollListener	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private OnScrollListener mOnScrollListener;$/;"	f	class:PullToRefreshAdapterViewBase	file:
+mOutAnim	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	private Animation mInAnim, mOutAnim;$/;"	f	class:IndicatorLayout	file:
+mPullLabel	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private String mPullLabel;$/;"	f	class:LoadingLayout	file:
+mRefreshableView	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	T mRefreshableView;$/;"	f	class:PullToRefreshBase
+mRefreshableViewHolder	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private FrameLayout mRefreshableViewHolder;$/;"	f	class:PullToRefreshAdapterViewBase	file:
+mRefreshingLabel	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private String mRefreshingLabel;$/;"	f	class:LoadingLayout	file:
+mReleaseLabel	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private String mReleaseLabel;$/;"	f	class:LoadingLayout	file:
+mResetRotateAnimation	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	private final Animation mRotateAnimation, mResetRotateAnimation;$/;"	f	class:IndicatorLayout	file:
+mRotateAnimation	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	private final Animation mRotateAnimation, mResetRotateAnimation;$/;"	f	class:IndicatorLayout	file:
+mRotateAnimation	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private final Animation mRotateAnimation;$/;"	f	class:LoadingLayout	file:
+mRotationPivotX	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private float mRotationPivotX, mRotationPivotY;$/;"	f	class:LoadingLayout	file:
+mRotationPivotY	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private float mRotationPivotX, mRotationPivotY;$/;"	f	class:LoadingLayout	file:
+mSavedLastVisibleIndex	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private int mSavedLastVisibleIndex = -1;$/;"	f	class:PullToRefreshAdapterViewBase	file:
+mScrollEmptyView	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private boolean mScrollEmptyView = true;$/;"	f	class:PullToRefreshAdapterViewBase	file:
+mScrollFromY	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		private final int mScrollFromY;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable	file:
+mScrollToY	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		private final int mScrollToY;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable	file:
+mShowIndicator	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private boolean mShowIndicator;$/;"	f	class:PullToRefreshAdapterViewBase	file:
+mShowViewWhileRefreshing	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private boolean mShowViewWhileRefreshing = true;$/;"	f	class:PullToRefreshBase	file:
+mStartTime	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		private long mStartTime = -1;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable	file:
+mState	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private int mState = PULL_TO_REFRESH;$/;"	f	class:PullToRefreshBase	file:
+mSubHeaderText	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private final TextView mSubHeaderText;$/;"	f	class:LoadingLayout	file:
+mTouchSlop	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private int mTouchSlop;$/;"	f	class:PullToRefreshBase	file:
+mapIntToMode	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public static Mode mapIntToMode(int modeInt) {$/;"	m	class:PullToRefreshBase.Mode
+measureView	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private void measureView(View child) {$/;"	m	class:PullToRefreshBase	file:
+onAnimationEnd	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	public void onAnimationEnd(Animation animation) {$/;"	m	class:IndicatorLayout
+onAnimationRepeat	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	public void onAnimationRepeat(Animation animation) {$/;"	m	class:IndicatorLayout
+onAnimationStart	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	public void onAnimationStart(Animation animation) {$/;"	m	class:IndicatorLayout
+onInterceptTouchEvent	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean onInterceptTouchEvent(MotionEvent event) {$/;"	m	class:PullToRefreshBase
+onLastItemVisible	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public void onLastItemVisible();$/;"	m	interface:PullToRefreshBase.OnLastItemVisibleListener
+onPullDownToRefresh	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public void onPullDownToRefresh(final PullToRefreshBase<V> refreshView);$/;"	m	interface:PullToRefreshBase.OnRefreshListener2
+onPullToRefresh	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void onPullToRefresh() {$/;"	m	class:PullToRefreshAdapterViewBase
+onPullToRefresh	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void onPullToRefresh() {$/;"	m	class:PullToRefreshBase
+onPullUpToRefresh	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public void onPullUpToRefresh(final PullToRefreshBase<V> refreshView);$/;"	m	interface:PullToRefreshBase.OnRefreshListener2
+onPullY	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void onPullY(float scaleOfHeight) {$/;"	m	class:LoadingLayout
+onRefresh	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public void onRefresh(final PullToRefreshBase<V> refreshView);$/;"	m	interface:PullToRefreshBase.OnRefreshListener
+onRefreshComplete	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final void onRefreshComplete() {$/;"	m	class:PullToRefreshBase
+onReleaseToRefresh	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void onReleaseToRefresh() {$/;"	m	class:PullToRefreshAdapterViewBase
+onReleaseToRefresh	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void onReleaseToRefresh() {$/;"	m	class:PullToRefreshBase
+onRestoreInstanceState	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void onRestoreInstanceState(Parcelable state) {$/;"	m	class:PullToRefreshBase
+onSaveInstanceState	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected Parcelable onSaveInstanceState() {$/;"	m	class:PullToRefreshBase
+onScroll	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public final void onScroll(final AbsListView view, final int firstVisibleItem, final int visibleItemCount,$/;"	m	class:PullToRefreshAdapterViewBase
+onScrollChanged	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void onScrollChanged(int l, int t, int oldl, int oldt) {$/;"	m	class:PullToRefreshAdapterViewBase
+onScrollStateChanged	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public final void onScrollStateChanged(final AbsListView view, final int scrollState) {$/;"	m	class:PullToRefreshAdapterViewBase
+onTouchEvent	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean onTouchEvent(MotionEvent event) {$/;"	m	class:PullToRefreshBase
+ptrAdapterViewBackground	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int ptrAdapterViewBackground=0x7f010000;$/;"	f	class:R.attr
+ptrDrawable	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int ptrDrawable=0x7f010006;$/;"	f	class:R.attr
+ptrHeaderBackground	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int ptrHeaderBackground=0x7f010001;$/;"	f	class:R.attr
+ptrHeaderSubTextColor	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int ptrHeaderSubTextColor=0x7f010003;$/;"	f	class:R.attr
+ptrHeaderTextColor	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int ptrHeaderTextColor=0x7f010002;$/;"	f	class:R.attr
+ptrMode	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int ptrMode=0x7f010004;$/;"	f	class:R.attr
+ptrShowIndicator	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int ptrShowIndicator=0x7f010005;$/;"	f	class:R.attr
+pullDownFromTop	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pullDownFromTop=0x7f050001;$/;"	f	class:R.id
+pullEvent	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private boolean pullEvent() {$/;"	m	class:PullToRefreshBase	file:
+pullToRefresh	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	public void pullToRefresh() {$/;"	m	class:IndicatorLayout
+pullToRefresh	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void pullToRefresh() {$/;"	m	class:LoadingLayout
+pullUpFromBottom	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pullUpFromBottom=0x7f050002;$/;"	f	class:R.id
+pull_to_refresh_from_bottom_pull_label	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pull_to_refresh_from_bottom_pull_label=0x7f070003;$/;"	f	class:R.string
+pull_to_refresh_from_bottom_refreshing_label	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pull_to_refresh_from_bottom_refreshing_label=0x7f070005;$/;"	f	class:R.string
+pull_to_refresh_from_bottom_release_label	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pull_to_refresh_from_bottom_release_label=0x7f070004;$/;"	f	class:R.string
+pull_to_refresh_header	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pull_to_refresh_header=0x7f030000;$/;"	f	class:R.layout
+pull_to_refresh_image	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pull_to_refresh_image=0x7f050008;$/;"	f	class:R.id
+pull_to_refresh_pull_label	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pull_to_refresh_pull_label=0x7f070000;$/;"	f	class:R.string
+pull_to_refresh_refreshing_label	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pull_to_refresh_refreshing_label=0x7f070002;$/;"	f	class:R.string
+pull_to_refresh_release_label	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pull_to_refresh_release_label=0x7f070001;$/;"	f	class:R.string
+pull_to_refresh_sub_text	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pull_to_refresh_sub_text=0x7f050007;$/;"	f	class:R.id
+pull_to_refresh_text	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int pull_to_refresh_text=0x7f050006;$/;"	f	class:R.id
+refreshLoadingViewsHeight	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private void refreshLoadingViewsHeight() {$/;"	m	class:PullToRefreshBase	file:
+refreshing	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void refreshing() {$/;"	m	class:LoadingLayout
+releaseToRefresh	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	public void releaseToRefresh() {$/;"	m	class:IndicatorLayout
+releaseToRefresh	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void releaseToRefresh() {$/;"	m	class:LoadingLayout
+removeIndicatorViews	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private void removeIndicatorViews() {$/;"	m	class:PullToRefreshAdapterViewBase	file:
+reset	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void reset() {$/;"	m	class:LoadingLayout
+resetHeader	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void resetHeader() {$/;"	m	class:PullToRefreshAdapterViewBase
+resetHeader	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void resetHeader() {$/;"	m	class:PullToRefreshBase
+resetHeader	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	protected void resetHeader() {$/;"	m	class:PullToRefreshListView
+resetImageRotation	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private void resetImageRotation() {$/;"	m	class:LoadingLayout	file:
+run	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public void run() {$/;"	m	class:PullToRefreshBase.SmoothScrollRunnable
+setAdapter	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^		public void setAdapter(ListAdapter adapter) {$/;"	m	class:PullToRefreshListView.InternalListView
+setDisableScrollingWhileRefreshing	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final void setDisableScrollingWhileRefreshing(boolean disableScrollingWhileRefreshing) {$/;"	m	class:PullToRefreshBase
+setEmptyView	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public final void setEmptyView(View newEmptyView) {$/;"	m	class:PullToRefreshAdapterViewBase
+setEmptyView	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^		public void setEmptyView(View emptyView) {$/;"	m	class:PullToRefreshExpandableListView.InternalExpandableListView
+setEmptyView	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^		public void setEmptyView(View emptyView) {$/;"	m	class:PullToRefreshGridView.InternalGridView
+setEmptyView	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^		public void setEmptyView(View emptyView) {$/;"	m	class:PullToRefreshListView.InternalListView
+setEmptyView	src/com/handmark/pulltorefresh/library/internal/EmptyViewMethodAccessor.java	/^	public void setEmptyView(View emptyView);$/;"	m	interface:EmptyViewMethodAccessor
+setEmptyViewInternal	src/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java	/^		public void setEmptyViewInternal(View emptyView) {$/;"	m	class:PullToRefreshExpandableListView.InternalExpandableListView
+setEmptyViewInternal	src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^		public void setEmptyViewInternal(View emptyView) {$/;"	m	class:PullToRefreshGridView.InternalGridView
+setEmptyViewInternal	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^		public void setEmptyViewInternal(View emptyView) {$/;"	m	class:PullToRefreshListView.InternalListView
+setEmptyViewInternal	src/com/handmark/pulltorefresh/library/internal/EmptyViewMethodAccessor.java	/^	public void setEmptyViewInternal(View emptyView);$/;"	m	interface:EmptyViewMethodAccessor
+setFilterTouchEvents	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final void setFilterTouchEvents(boolean filterEvents) {$/;"	m	class:PullToRefreshBase
+setHeaderScroll	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected final void setHeaderScroll(int y) {$/;"	m	class:PullToRefreshBase
+setLastUpdatedLabel	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public void setLastUpdatedLabel(CharSequence label) {$/;"	m	class:PullToRefreshBase
+setLoadingDrawable	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public void setLoadingDrawable(Drawable drawable) {$/;"	m	class:PullToRefreshBase
+setLoadingDrawable	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public void setLoadingDrawable(Drawable drawable, Mode mode) {$/;"	m	class:PullToRefreshBase
+setLoadingDrawable	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void setLoadingDrawable(Drawable imageDrawable) {$/;"	m	class:LoadingLayout
+setLongClickable	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public void setLongClickable(boolean longClickable) {$/;"	m	class:PullToRefreshBase
+setMode	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final void setMode(Mode mode) {$/;"	m	class:PullToRefreshBase
+setOnLastItemVisibleListener	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public final void setOnLastItemVisibleListener(OnLastItemVisibleListener listener) {$/;"	m	class:PullToRefreshAdapterViewBase
+setOnRefreshListener	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final void setOnRefreshListener(OnRefreshListener2<T> listener) {$/;"	m	class:PullToRefreshBase
+setOnRefreshListener	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final void setOnRefreshListener(OnRefreshListener<T> listener) {$/;"	m	class:PullToRefreshBase
+setOnScrollListener	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public final void setOnScrollListener(OnScrollListener listener) {$/;"	m	class:PullToRefreshAdapterViewBase
+setPullLabel	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public void setPullLabel(String pullLabel) {$/;"	m	class:PullToRefreshBase
+setPullLabel	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public void setPullLabel(String pullLabel, Mode mode) {$/;"	m	class:PullToRefreshBase
+setPullLabel	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	public void setPullLabel(String pullLabel, Mode mode) {$/;"	m	class:PullToRefreshListView
+setPullLabel	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void setPullLabel(String pullLabel) {$/;"	m	class:LoadingLayout
+setPullToRefreshEnabled	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final void setPullToRefreshEnabled(boolean enable) {$/;"	m	class:PullToRefreshBase
+setRefreshing	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final void setRefreshing() {$/;"	m	class:PullToRefreshBase
+setRefreshing	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final void setRefreshing(boolean doScroll) {$/;"	m	class:PullToRefreshBase
+setRefreshingInternal	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void setRefreshingInternal(boolean doScroll) {$/;"	m	class:PullToRefreshAdapterViewBase
+setRefreshingInternal	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void setRefreshingInternal(boolean doScroll) {$/;"	m	class:PullToRefreshBase
+setRefreshingInternal	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	protected void setRefreshingInternal(boolean doScroll) {$/;"	m	class:PullToRefreshListView
+setRefreshingLabel	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public void setRefreshingLabel(String refreshingLabel) {$/;"	m	class:PullToRefreshBase
+setRefreshingLabel	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public void setRefreshingLabel(String refreshingLabel, Mode mode) {$/;"	m	class:PullToRefreshBase
+setRefreshingLabel	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	public void setRefreshingLabel(String refreshingLabel, Mode mode) {$/;"	m	class:PullToRefreshListView
+setRefreshingLabel	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void setRefreshingLabel(String refreshingLabel) {$/;"	m	class:LoadingLayout
+setReleaseLabel	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public void setReleaseLabel(String releaseLabel) {$/;"	m	class:PullToRefreshBase
+setReleaseLabel	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public void setReleaseLabel(String releaseLabel, Mode mode) {$/;"	m	class:PullToRefreshBase
+setReleaseLabel	src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	public void setReleaseLabel(String releaseLabel, Mode mode) {$/;"	m	class:PullToRefreshListView
+setReleaseLabel	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void setReleaseLabel(String releaseLabel) {$/;"	m	class:LoadingLayout
+setScrollEmptyView	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public final void setScrollEmptyView(boolean doScroll) {$/;"	m	class:PullToRefreshAdapterViewBase
+setShowIndicator	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public void setShowIndicator(boolean showIndicator) {$/;"	m	class:PullToRefreshAdapterViewBase
+setShowViewWhileRefreshing	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final void setShowViewWhileRefreshing(boolean showView) {$/;"	m	class:PullToRefreshBase
+setSubHeaderText	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void setSubHeaderText(CharSequence label) {$/;"	m	class:LoadingLayout
+setSubTextColor	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void setSubTextColor(ColorStateList color) {$/;"	m	class:LoadingLayout
+setSubTextColor	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void setSubTextColor(int color) {$/;"	m	class:LoadingLayout
+setTextColor	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void setTextColor(ColorStateList color) {$/;"	m	class:LoadingLayout
+setTextColor	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void setTextColor(int color) {$/;"	m	class:LoadingLayout
+show	src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	public void show() {$/;"	m	class:IndicatorLayout
+slide_in_from_bottom	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int slide_in_from_bottom=0x7f040000;$/;"	f	class:R.anim
+slide_in_from_top	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int slide_in_from_top=0x7f040001;$/;"	f	class:R.anim
+slide_out_to_bottom	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int slide_out_to_bottom=0x7f040002;$/;"	f	class:R.anim
+slide_out_to_top	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int slide_out_to_top=0x7f040003;$/;"	f	class:R.anim
+smoothScrollTo	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected final void smoothScrollTo(int y) {$/;"	m	class:PullToRefreshBase
+stop	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public void stop() {$/;"	m	class:PullToRefreshBase.SmoothScrollRunnable
+string	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class string {$/;"	c	class:R
+styleable	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class styleable {$/;"	c	class:R
+updateIndicatorViewsVisibility	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private void updateIndicatorViewsVisibility() {$/;"	m	class:PullToRefreshAdapterViewBase	file:
+updateUIForMode	src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void updateUIForMode() {$/;"	m	class:PullToRefreshAdapterViewBase
+updateUIForMode	src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void updateUIForMode() {$/;"	m	class:PullToRefreshBase
+webview	gen/com/handmark/pulltorefresh/library/R.java	/^        public static int webview=0x7f050005;$/;"	f	class:R.id
+wrapHtmlLabel	src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private CharSequence wrapHtmlLabel(String label) {$/;"	m	class:LoadingLayout	file:
