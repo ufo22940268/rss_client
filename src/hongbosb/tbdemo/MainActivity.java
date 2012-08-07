@@ -10,7 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.LayoutInflater;
 import android.widget.TextView;
-import android.os.AsyncTask;
+import android.os.Handler;
+import android.os.Handler.Callback;
+import android.os.Message;
+import android.os.HandlerThread;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -25,22 +28,48 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements Callback {
     static public final String TAG = "MainActivity";
+
+    static public final int MESSAGE_REFRESH_ADAPTER = 0;
+
+    static public final String BUNDLE_BEAN_LIST = 0;
 
     private String[] mImageUrls;
     private FlowAdapter mAdapter;
+
+    private long mDate = 8;
+    private Handler mMainHandler;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        mMainHandler = new Handler(this);
+
         ListView listView = getListView();
         mAdapter = new FlowAdapter();
         listView.setAdapter(mAdapter);
+    }
 
-        new LoadTask().execute(null, null, null);
+    @Override
+    public boolean handleMessage(Message msg) {
+        switch (msg.what) {
+            case MESSAGE_REFRESH_ADAPTER:
+                List<RssBean> beans 
+                    = msg.getData().getParcelableArrayList(BUNDLE_BEAN_LIST);
+                if (beans == null) {
+                    return;
+                }
+
+                FlowAdapter adapter = getAdapter();
+                if (adapter.getCount() == 0) {
+                    adapter.setBeans(beans);
+                    adapter.notifyDataSetChanged();
+                }
+        }
+        return true;
     }
 
     private ListView getListView() {
@@ -49,6 +78,17 @@ public class MainActivity extends Activity {
 
     private FlowAdapter getAdapter() {
         return mAdapter;
+    }
+
+    private long getDateParam() {
+       if (mDate >= 0) {
+           return mDate --;
+       }
+       return -1;
+    }
+
+    private String getUrl() {
+        return "http://192.168.121.10:8888/query?date=" + String.valueOf(getDateParam());
     }
 
     private class FlowAdapter extends BaseAdapter {
@@ -90,24 +130,34 @@ public class MainActivity extends Activity {
         }
     }
 
-    private class LoadTask extends AsyncTask<Void, Void, List<RssBean>> {
+    private class LoaderHandler extends HandlerThread implements Callback {
 
-        @Override
-        protected List<RssBean> doInBackground(Void... params) {
-            return loadXmlData();
+        private Handler mHandler;
+
+        public LoaderHandler() {
+            super("hongbosbloader");
+        }
+
+        private void requestLoading() {
+            if (mHandler == null) {
+                mHandler = new Handler(getLooper(), this);
+            }
+
+            mHandler.sendEmptyMessage(0);
         }
 
         @Override
-        protected void onPostExecute(List<RssBean> beans) {
-            if (beans == null) {
-                return;
-            }
+        public boolean handleMessage(Message msg) {
+            ArrayList<RssBean> beans = loadXmlData();
 
-            FlowAdapter adapter = getAdapter();
-            if (adapter.getCount() == 0) {
-                adapter.setBeans(beans);
-                adapter.notifyDataSetChanged();
-            }
+            Bundle bundle = new Bundle();
+            bundle.putParcelableArrayList(beans);
+            Message msg = new Message();
+            msg.setData(bundle);
+            msg.what = MESSAGE_REFRESH_ADAPTER;
+            mMainHandler.setMessage(msg);
+
+            return true;
         }
 
         private List<RssBean> loadXmlData() {
@@ -119,7 +169,7 @@ public class MainActivity extends Activity {
 
         private String loadContent() {
             try {
-                URL url = new URL("http://192.168.121.10:8888/query?date=123");
+                URL url = new URL(getUrl());
                 HttpURLConnection conn = (HttpURLConnection)url.openConnection();
                 BufferedInputStream in = new BufferedInputStream(conn.getInputStream());
                 BufferedReader reader = new BufferedReader(new InputStreamReader(in));

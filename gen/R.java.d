@@ -33,6 +33,7 @@
 /home/ccheng/workspace_tb/rss_client/libs/bin/res/drawable-xhdpi/default_ptr_drawable.png \
 /home/ccheng/workspace_tb/rss_client/libs/bin/res/drawable-xhdpi/arrow_up.png \
 /home/ccheng/workspace_tb/rss_client/res/values/strings.xml \
+/home/ccheng/workspace_tb/rss_client/res/layout/flow_item.xml \
 /home/ccheng/workspace_tb/rss_client/res/layout/main_list_item.xml \
 /home/ccheng/workspace_tb/rss_client/res/layout/main.xml \
 /home/ccheng/workspace_tb/rss_client/bin/AndroidManifest.xml \

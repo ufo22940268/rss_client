@@ -1,6 +1,5 @@
 /home/ccheng/workspace_tb/rss_client/bin/classes.dex : \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/JsonParser.class \
-/home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/MainActivity$LoadTask.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/R$id.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/LazyAdapter.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/XmlParser$BeanGenerator.class \
@@ -8,6 +7,7 @@
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/R$drawable.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/ImageLoader$LoadHandler$1.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/R$layout.class \
+/home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/RssBean$1.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/MainActivity$1.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/Config.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/BuildConfig.class \
@@ -19,6 +19,7 @@
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/R$dimen.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/ImageLoader$LoadHandler.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/ImageLoader$MemoryCache.class \
+/home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/MainActivity$LoaderHandler.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/FileCache.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/ImageLoader.class \
 /home/ccheng/workspace_tb/rss_client/bin/classes/hongbosb/tbdemo/R$anim.class \

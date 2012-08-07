@@ -106,8 +106,6 @@ $w	Session.vim	/^vnoremap $w `>a"`<i"$/;"	m
 ,y	Session.vim	/^map ,y :YRShow$/;"	m
 ,z	Session.vim	/^map ,z <Plug>ZoomWin$/;"	m
 0	Session.vim	/^map 0 ^$/;"	m
-010l	Session.vim	/^normal! 010l$/;"	m
-04l	Session.vim	/^normal! 04l$/;"	m
 <F11>	Session.vim	/^nnoremap <silent> <F11> :call conque_term#exec_file()$/;"	m
 <F2>	Session.vim	/^nmap <F2> :call OpenJavadoc()$/;"	m
 <F2>	Session.vim	/^omap <F2> :NERDTreeToggle$/;"	m
@@ -202,11 +200,12 @@ LazyAdapter	src/hongbosb/tbdemo/LazyAdapter.java	/^    public LazyAdapter(Activi
 LazyAdapter	src/hongbosb/tbdemo/LazyAdapter.java	/^class LazyAdapter extends BaseAdapter {$/;"	c
 LoadHandler	src/hongbosb/tbdemo/ImageLoader.java	/^        public LoadHandler(ImageView image, String url) {$/;"	m	class:ImageLoader.LoadHandler
 LoadHandler	src/hongbosb/tbdemo/ImageLoader.java	/^    class LoadHandler implements Runnable {$/;"	c	class:ImageLoader
-LoadTask	src/hongbosb/tbdemo/MainActivity.java	/^    private class LoadTask extends AsyncTask<Void, Void, List<RssBean>> {$/;"	c	class:MainActivity
+LoaderHandler	src/hongbosb/tbdemo/MainActivity.java	/^        public LoaderHandler() {$/;"	m	class:MainActivity.LoaderHandler
+LoaderHandler	src/hongbosb/tbdemo/MainActivity.java	/^    private class LoaderHandler extends HandlerThread implements CallBack {$/;"	c	class:MainActivity
 LoadingLayout	libs/src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public LoadingLayout(Context context, final Mode mode, TypedArray attrs) {$/;"	m	class:LoadingLayout
 LoadingLayout	libs/src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^public class LoadingLayout extends FrameLayout {$/;"	c
 MANUAL_REFRESHING	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final int MANUAL_REFRESHING = 0x3;$/;"	f	class:PullToRefreshBase
-MainActivity	src/hongbosb/tbdemo/MainActivity.java	/^public class MainActivity extends Activity {$/;"	c
+MainActivity	src/hongbosb/tbdemo/MainActivity.java	/^public class MainActivity extends Activity implements CallBack {$/;"	c
 MainActivityTest	tests/src/hongbosb/tbdemo/MainActivityTest.java	/^    public MainActivityTest() {$/;"	m	class:MainActivityTest
 MainActivityTest	tests/src/hongbosb/tbdemo/MainActivityTest.java	/^public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {$/;"	c
 MemoryCache	src/hongbosb/tbdemo/ImageLoader.java	/^    class MemoryCache {$/;"	c	class:ImageLoader
@@ -343,7 +342,6 @@ disabled	gen/com/handmark/pulltorefresh/library/R.java	/^        public static f
 disabled	gen/hongbosb/tbdemo/R.java	/^        public static final int disabled=0x7f050000;$/;"	f	class:R.id
 disabled	libs/gen/com/handmark/pulltorefresh/library/R.java	/^        public static int disabled=0x7f050000;$/;"	f	class:R.id
 dispatch	src/hongbosb/tbdemo/XmlParser.java	/^        public static RssBean dispatch(Node node, RssBean bean) {$/;"	m	class:XmlParser.BeanGenerator
-doInBackground	src/hongbosb/tbdemo/MainActivity.java	/^        protected List<RssBean> doInBackground(Void... params) {$/;"	m	class:MainActivity.LoadTask
 draw	libs/src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^		public void draw(Canvas canvas) {$/;"	m	class:PullToRefreshListView.InternalListView
 drawable	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class drawable {$/;"	c	class:R
 drawable	gen/hongbosb/tbdemo/R.java	/^    public static final class drawable {$/;"	c	class:R
@@ -361,6 +359,7 @@ getContextMenuInfo	libs/src/com/handmark/pulltorefresh/library/PullToRefreshList
 getCount	src/hongbosb/tbdemo/LazyAdapter.java	/^    public int getCount() {$/;"	m	class:LazyAdapter
 getCount	src/hongbosb/tbdemo/MainActivity.java	/^        public int getCount() {$/;"	m	class:MainActivity.FlowAdapter
 getCurrentMode	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final Mode getCurrentMode() {$/;"	m	class:PullToRefreshBase
+getDateParam	src/hongbosb/tbdemo/MainActivity.java	/^    private long getDateParam() {$/;"	m	class:MainActivity	file:
 getFile	src/hongbosb/tbdemo/FileCache.java	/^    public static File getFile(String url) {$/;"	m	class:FileCache
 getFilterTouchEvents	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean getFilterTouchEvents() {$/;"	m	class:PullToRefreshBase
 getFooterLayout	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected final LoadingLayout getFooterLayout() {$/;"	m	class:PullToRefreshBase
@@ -379,12 +378,15 @@ getShowIndicator	libs/src/com/handmark/pulltorefresh/library/PullToRefreshAdapte
 getShowIndicatorInternal	libs/src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private boolean getShowIndicatorInternal() {$/;"	m	class:PullToRefreshAdapterViewBase	file:
 getShowViewWhileRefreshing	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean getShowViewWhileRefreshing() {$/;"	m	class:PullToRefreshBase
 getState	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected final int getState() {$/;"	m	class:PullToRefreshBase
+getUrl	src/hongbosb/tbdemo/MainActivity.java	/^    private String getUrl() {$/;"	m	class:MainActivity	file:
 getView	src/hongbosb/tbdemo/LazyAdapter.java	/^    public View getView(int pos, View convertView, ViewGroup parent) {$/;"	m	class:LazyAdapter
 getView	src/hongbosb/tbdemo/MainActivity.java	/^        public View getView(int pos, View convertView, ViewGroup parent) {$/;"	m	class:MainActivity.FlowAdapter
 gridview	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int gridview=0x7f050004;$/;"	f	class:R.id
 gridview	gen/hongbosb/tbdemo/R.java	/^        public static final int gridview=0x7f050004;$/;"	f	class:R.id
 gridview	libs/gen/com/handmark/pulltorefresh/library/R.java	/^        public static int gridview=0x7f050004;$/;"	f	class:R.id
 gx	Session.vim	/^nmap gx <Plug>NetrwBrowseX$/;"	m
+handleMessage	src/hongbosb/tbdemo/MainActivity.java	/^        protected boolean handleMessage(Message msg) {$/;"	m	class:MainActivity.LoaderHandler
+handleMessage	src/hongbosb/tbdemo/MainActivity.java	/^    protected boolean handleMessage(Message msg) {$/;"	m	class:MainActivity
 handleStyledAttributes	libs/src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void handleStyledAttributes(TypedArray a) {$/;"	m	class:PullToRefreshAdapterViewBase
 handleStyledAttributes	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void handleStyledAttributes(TypedArray a) {$/;"	m	class:PullToRefreshBase
 hasPullFromTop	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean hasPullFromTop() {$/;"	m	class:PullToRefreshBase
@@ -438,12 +440,12 @@ layout	gen/hongbosb/tbdemo/R.java	/^    public static final class layout {$/;"	c
 layout	libs/gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class layout {$/;"	c	class:R
 list	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int list=0x7f050006;$/;"	f	class:R.id
 list	gen/hongbosb/tbdemo/R.java	/^        public static final int list=0x7f050006;$/;"	f	class:R.id
-loadContent	src/hongbosb/tbdemo/MainActivity.java	/^        private String loadContent() {$/;"	m	class:MainActivity.LoadTask	file:
+loadContent	src/hongbosb/tbdemo/MainActivity.java	/^        private String loadContent() {$/;"	m	class:MainActivity.LoaderHandler	file:
 loadImage	src/hongbosb/tbdemo/ImageLoader.java	/^    public void loadImage(ImageView image, String url) {$/;"	m	class:ImageLoader
-loadXmlData	src/hongbosb/tbdemo/MainActivity.java	/^        private List<RssBean> loadXmlData() {$/;"	m	class:MainActivity.LoadTask	file:
+loadXmlData	src/hongbosb/tbdemo/MainActivity.java	/^        private List<RssBean> loadXmlData() {$/;"	m	class:MainActivity.LoaderHandler	file:
 mActivity	src/hongbosb/tbdemo/ImageLoader.java	/^    Activity mActivity;$/;"	f	class:ImageLoader
 mActivity	src/hongbosb/tbdemo/LazyAdapter.java	/^    Activity mActivity;$/;"	f	class:LazyAdapter
-mAdapter	src/hongbosb/tbdemo/MainActivity.java	/^    private FlowAdapter mAdapter;$/;"	f	class:MainActivity	file:
+mAdapter	src/hongbosb/tbdemo/MainActivity.java	/^    private FlowAdapter mAdapter;method$/;"	f	class:MainActivity	file:
 mAddedLvFooter	libs/src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^		private boolean mAddedLvFooter = false;$/;"	f	class:PullToRefreshListView.InternalListView	file:
 mArrowImageView	libs/src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	private ImageView mArrowImageView;$/;"	f	class:IndicatorLayout	file:
 mBeans	src/hongbosb/tbdemo/MainActivity.java	/^        private List<RssBean> mBeans;$/;"	f	class:MainActivity.FlowAdapter	file:
@@ -454,11 +456,13 @@ mContinueRunning	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.j
 mCurrentMode	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private Mode mCurrentMode;$/;"	f	class:PullToRefreshBase	file:
 mCurrentSmoothScrollRunnable	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private SmoothScrollRunnable mCurrentSmoothScrollRunnable;$/;"	f	class:PullToRefreshBase	file:
 mCurrentY	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		private int mCurrentY = -1;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable	file:
+mDate	src/hongbosb/tbdemo/MainActivity.java	/^    private long mDate = 8;$/;"	f	class:MainActivity	file:
 mDisableScrollingWhileRefreshing	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private boolean mDisableScrollingWhileRefreshing = true;$/;"	f	class:PullToRefreshBase	file:
 mEmptyView	libs/src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private View mEmptyView;$/;"	f	class:PullToRefreshAdapterViewBase	file:
 mFilterTouchEvents	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private boolean mFilterTouchEvents = true;$/;"	f	class:PullToRefreshBase	file:
 mFooterLayout	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private LoadingLayout mFooterLayout;$/;"	f	class:PullToRefreshBase	file:
 mFooterLoadingView	libs/src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	private LoadingLayout mFooterLoadingView;$/;"	f	class:PullToRefreshListView	file:
+mHandler	src/hongbosb/tbdemo/MainActivity.java	/^        private Handler mHandler;$/;"	f	class:MainActivity.LoaderHandler	file:
 mHeaderHeight	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	private int mHeaderHeight;$/;"	f	class:PullToRefreshBase	file:
 mHeaderImage	libs/src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private final ImageView mHeaderImage;$/;"	f	class:LoadingLayout	file:
 mHeaderImageMatrix	libs/src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private final Matrix mHeaderImageMatrix;$/;"	f	class:LoadingLayout	file:
@@ -522,7 +526,7 @@ onAnimationStart	libs/src/com/handmark/pulltorefresh/library/internal/IndicatorL
 onCreate	src/hongbosb/tbdemo/MainActivity.java	/^    public void onCreate(Bundle savedInstanceState) {$/;"	m	class:MainActivity
 onInterceptTouchEvent	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean onInterceptTouchEvent(MotionEvent event) {$/;"	m	class:PullToRefreshBase
 onLastItemVisible	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public void onLastItemVisible();$/;"	m	interface:PullToRefreshBase.OnLastItemVisibleListener
-onPostExecute	src/hongbosb/tbdemo/MainActivity.java	/^        protected void onPostExecute(List<RssBean> beans) {$/;"	m	class:MainActivity.LoadTask
+onPostExecute	src/hongbosb/tbdemo/MainActivity.java	/^        protected void onPostExecute(List<RssBean> beans) {$/;"	m	class:MainActivity.LoaderHandler
 onPullDownToRefresh	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public void onPullDownToRefresh(final PullToRefreshBase<V> refreshView);$/;"	m	interface:PullToRefreshBase.OnRefreshListener2
 onPullToRefresh	libs/src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void onPullToRefresh() {$/;"	m	class:PullToRefreshAdapterViewBase
 onPullToRefresh	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void onPullToRefresh() {$/;"	m	class:PullToRefreshBase
@@ -605,6 +609,7 @@ refreshing	libs/src/com/handmark/pulltorefresh/library/internal/LoadingLayout.ja
 releaseToRefresh	libs/src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	public void releaseToRefresh() {$/;"	m	class:IndicatorLayout
 releaseToRefresh	libs/src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void releaseToRefresh() {$/;"	m	class:LoadingLayout
 removeIndicatorViews	libs/src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private void removeIndicatorViews() {$/;"	m	class:PullToRefreshAdapterViewBase	file:
+requestLoading	src/hongbosb/tbdemo/MainActivity.java	/^        private void requestLoading() {$/;"	m	class:MainActivity.LoaderHandler	file:
 reset	libs/src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	public void reset() {$/;"	m	class:LoadingLayout
 resetHeader	libs/src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void resetHeader() {$/;"	m	class:PullToRefreshAdapterViewBase
 resetHeader	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void resetHeader() {$/;"	m	class:PullToRefreshBase
@@ -613,8 +618,6 @@ resetImageRotation	libs/src/com/handmark/pulltorefresh/library/internal/LoadingL
 run	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public void run() {$/;"	m	class:PullToRefreshBase.SmoothScrollRunnable
 run	src/hongbosb/tbdemo/ImageLoader.java	/^        public void run() {$/;"	m	class:ImageLoader.LoadHandler
 s:cpo_save	Session.vim	/^let s:cpo_save=&cpo$/;"	v
-s:l	Session.vim	/^let s:l = 21 - ((11 * winheight(0) + 12) \/ 25)$/;"	v
-s:l	Session.vim	/^let s:l = 58 - ((10 * winheight(0) + 12) \/ 24)$/;"	v
 s:so_save	Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
 s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
 s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
@@ -701,7 +704,6 @@ webview	gen/com/handmark/pulltorefresh/library/R.java	/^        public static fi
 webview	gen/hongbosb/tbdemo/R.java	/^        public static final int webview=0x7f050005;$/;"	f	class:R.id
 webview	libs/gen/com/handmark/pulltorefresh/library/R.java	/^        public static int webview=0x7f050005;$/;"	f	class:R.id
 wrapHtmlLabel	libs/src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private CharSequence wrapHtmlLabel(String label) {$/;"	m	class:LoadingLayout	file:
-zt	Session.vim	/^normal! zt$/;"	m
 ê	Session.vim	/^nmap ê mz:m+$/;"	m
 ê	Session.vim	/^vmap ê :m'>+$/;"	m
 ë	Session.vim	/^nmap ë mz:m-2$/;"	m
