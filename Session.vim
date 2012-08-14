@@ -3,6 +3,7 @@ if &cp | set nocp | endif
 let s:cpo_save=&cpo
 set cpo&vim
 inoremap <silent> <S-Tab> =BackwardsSnippet()
+inoremap <C-Tab> 	
 snoremap <silent> 	 i<Right>=TriggerSnippet()
 nmap  :JavaBrowser
 map  :WMToggle
@@ -26,8 +27,6 @@ vnoremap $2 `>a]`<i[
 vnoremap $1 `>a)`<i(
 snoremap % b<BS>%
 snoremap ' b<BS>'
-vmap ,3 :set syntax=python
-vmap ,4 :set ft=javascript
 map ,tl :!adb shell am start -n  hongbosb.tbdemo/.MainActivity 
 nmap <silent> ,cv <Plug>VCSVimDiff
 nmap <silent> ,cu <Plug>VCSUpdate
@@ -45,8 +44,6 @@ nmap <silent> ,cG <Plug>VCSClearAndGotoOriginal
 nmap <silent> ,cD <Plug>VCSDelete
 nmap <silent> ,cc <Plug>VCSCommit
 nmap <silent> ,ca <Plug>VCSAdd
-nnoremap <silent> ,b :CommandTBuffer
-nnoremap <silent> ,t :CommandT
 nmap ,caL <Plug>CalendarH
 nmap ,cal <Plug>CalendarV
 nmap ,scp <Plug>SQLUCreateProcedure
@@ -59,6 +56,64 @@ vmap ,sfs <Plug>SQLUFormatter
 nmap ,sfs <Plug>SQLUFormatter
 vmap ,sfr <Plug>SQLUFormatStmts
 nmap ,sfr <Plug>SQLUFormatStmts
+nnoremap <silent> ,b :CommandTBuffer
+nnoremap <silent> ,t :CommandT
+vnoremap <silent> ,,w :call EasyMotion#WB(1, 0)
+onoremap <silent> ,,w :call EasyMotion#WB(0, 0)
+nnoremap <silent> ,,w :call EasyMotion#WB(0, 0)
+vnoremap <silent> ,,t :call EasyMotion#T(1, 0)
+onoremap <silent> ,,t :call EasyMotion#T(0, 0)
+nnoremap <silent> ,,t :call EasyMotion#T(0, 0)
+vnoremap <silent> ,,n :call EasyMotion#Search(1, 0)
+onoremap <silent> ,,n :call EasyMotion#Search(0, 0)
+nnoremap <silent> ,,n :call EasyMotion#Search(0, 0)
+vnoremap <silent> ,,k :call EasyMotion#JK(1, 1)
+onoremap <silent> ,,k :call EasyMotion#JK(0, 1)
+nnoremap <silent> ,,k :call EasyMotion#JK(0, 1)
+vnoremap <silent> ,,j :call EasyMotion#JK(1, 0)
+onoremap <silent> ,,j :call EasyMotion#JK(0, 0)
+nnoremap <silent> ,,j :call EasyMotion#JK(0, 0)
+vnoremap <silent> ,,gE :call EasyMotion#EW(1, 1)
+onoremap <silent> ,,gE :call EasyMotion#EW(0, 1)
+nnoremap <silent> ,,gE :call EasyMotion#EW(0, 1)
+vnoremap <silent> ,,f :call EasyMotion#F(1, 0)
+onoremap <silent> ,,f :call EasyMotion#F(0, 0)
+nnoremap <silent> ,,f :call EasyMotion#F(0, 0)
+vnoremap <silent> ,,e :call EasyMotion#E(1, 0)
+onoremap <silent> ,,e :call EasyMotion#E(0, 0)
+nnoremap <silent> ,,e :call EasyMotion#E(0, 0)
+vnoremap <silent> ,,b :call EasyMotion#WB(1, 1)
+onoremap <silent> ,,b :call EasyMotion#WB(0, 1)
+nnoremap <silent> ,,b :call EasyMotion#WB(0, 1)
+vnoremap <silent> ,,W :call EasyMotion#WBW(1, 0)
+onoremap <silent> ,,W :call EasyMotion#WBW(0, 0)
+nnoremap <silent> ,,W :call EasyMotion#WBW(0, 0)
+vnoremap <silent> ,,T :call EasyMotion#T(1, 1)
+onoremap <silent> ,,T :call EasyMotion#T(0, 1)
+nnoremap <silent> ,,T :call EasyMotion#T(0, 1)
+vnoremap <silent> ,,N :call EasyMotion#Search(1, 1)
+onoremap <silent> ,,N :call EasyMotion#Search(0, 1)
+nnoremap <silent> ,,N :call EasyMotion#Search(0, 1)
+vnoremap <silent> ,,ge :call EasyMotion#E(1, 1)
+onoremap <silent> ,,ge :call EasyMotion#E(0, 1)
+nnoremap <silent> ,,ge :call EasyMotion#E(0, 1)
+vnoremap <silent> ,,F :call EasyMotion#F(1, 1)
+onoremap <silent> ,,F :call EasyMotion#F(0, 1)
+nnoremap <silent> ,,F :call EasyMotion#F(0, 1)
+vnoremap <silent> ,,E :call EasyMotion#EW(1, 0)
+onoremap <silent> ,,E :call EasyMotion#EW(0, 0)
+nnoremap <silent> ,,E :call EasyMotion#EW(0, 0)
+vnoremap <silent> ,,B :call EasyMotion#WBW(1, 1)
+onoremap <silent> ,,B :call EasyMotion#WBW(0, 1)
+nnoremap <silent> ,,B :call EasyMotion#WBW(0, 1)
+vnoremap ,p :call EchoSelectionLines()
+noremap ,m :make
+map ,wp :call SwitchToProject("PROVIDER")
+map ,wr :call SwitchToProject("RES")
+map ,wf :call SwitchToProject("FRA")
+map ,wh :call SwitchToProject("CALL_HISTORY")
+map ,wc :call SwitchToProject("CONTACTS")
+map <silent> ,bt :!ctags -R --exclude=\.* 
 noremap ,vcs :e res/values-zh-rCN/strings.xml
 noremap ,ves :e res/values/strings.xml
 noremap ,di :call DebugInnerContacts()
@@ -90,11 +145,13 @@ map ,sa zg
 map ,sp [
 map ,sn ]
 map ,q :e ~/buffer
-map ,cd :cd %:p:h
+noremap ,cd :call CdToProjectRoot()
 nmap ,fu :se ff=unix
 nmap ,fd :se ff=dos
 map ,$ :syntax sync fromstart
+vmap ,4 :set ft=javascript
 omap ,4 :set ft=javascript
+vmap ,3 :set syntax=python
 omap ,3 :set syntax=python
 map ,2 :set syntax=xhtml
 map ,1 :set syntax=cheetah
@@ -109,21 +166,11 @@ snoremap ^ b<BS>^
 snoremap ` b<BS>`
 vmap a% [%v]%
 nmap gx <Plug>NetrwBrowseX
-vmap <F2> :NERDTreeToggle
-nmap <F2> :call OpenJavadoc()
 snoremap <Left> bi
 snoremap <Right> a
 snoremap <BS> b<BS>
 snoremap <silent> <S-Tab> i<Right>=BackwardsSnippet()
 nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
-nnoremap <silent> <Plug>CVSWatchRemove :CVSWatch remove
-nnoremap <silent> <Plug>CVSWatchOn :CVSWatch on
-nnoremap <silent> <Plug>CVSWatchOff :CVSWatch off
-nnoremap <silent> <Plug>CVSWatchAdd :CVSWatch add
-nnoremap <silent> <Plug>CVSWatchers :CVSWatchers
-nnoremap <silent> <Plug>CVSUnedit :CVSUnedit
-nnoremap <silent> <Plug>CVSEditors :CVSEditors
-nnoremap <silent> <Plug>CVSEdit :CVSEdit
 nnoremap <silent> <Plug>VCSVimDiff :VCSVimDiff
 nnoremap <silent> <Plug>VCSUpdate :VCSUpdate
 nnoremap <silent> <Plug>VCSUnlock :VCSUnlock
@@ -144,6 +191,7 @@ nnoremap <silent> <Plug>VCSAdd :VCSAdd
 nnoremap <silent> <F11> :call conque_term#exec_file()
 nnoremap <silent> <Plug>CalendarH :cal Calendar(1)
 nnoremap <silent> <Plug>CalendarV :cal Calendar(0)
+noremap <F2> :NERDTreeToggle
 nmap <Nul><Nul>d :vert scs find d =expand("<cword>")
 nmap <Nul><Nul>i :vert scs find i ^=expand("<cfile>")$	
 nmap <Nul><Nul>f :vert scs find f =expand("<cfile>")	
@@ -160,14 +208,14 @@ nmap <Nul>t :scs find t =expand("<cword>")
 nmap <Nul>c :scs find c =expand("<cword>")	
 nmap <Nul>g :scs find g =expand("<cword>")	
 nmap <Nul>s :scs find s =expand("<cword>")	
-omap <F2> :NERDTreeToggle
-map <silent> <F5> :!ctags -R --exclude=\.* 
 map <F3> :Tlist
 map <F9> ggVGg?
 cnoremap  <Home>
 cnoremap  <End>
 inoremap <silent> 	 =TriggerSnippet()
 cnoremap  
+imap  <Plug>SuperTabForward
+imap  <Plug>SuperTabBackward
 inoremap <silent> 	 =ShowAvailableSnips()
 cnoremap $td tabnew ~/Desktop/
 cnoremap $th tabnew ~/
@@ -186,29 +234,25 @@ set autoread
 set autowrite
 set background=dark
 set backspace=2
-set balloonexpr=JavaBrowser_Show_Prototype()
 set cindent
 set cmdheight=2
 set cscopeverbose
 set errorformat=%A\ %#[javac]\ %f:%l:\ %m,%A\ %#[aapt]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
 set expandtab
 set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,euc-kr,latin1
-set fileformats=unix,dos,mac
-set guitablabel=%{TabGuiCaptionLabel()}
-set helplang=en
 set hidden
-set history=400
 set ignorecase
 set incsearch
+set keywordprg=androiddoc.py
 set laststatus=2
 set lazyredraw
 set makeprg=ant\ clean\ debug\ install
 set matchtime=8
+set modelines=0
 set mouse=a
 set path=.,/usr/include,,,res/layout,res/layout-finger,res/values,res/drawable,res/drawable-mdpi
-set printoptions=paper:letter
 set ruler
-set runtimepath=~/.vim,/var/lib/vim/addons,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/var/lib/vim/addons/after,~/.vim/after
+set runtimepath=~/.vim/bundle/vundle,~/.vim/bundle/vim-fugitive,~/.vim/bundle/vim-easymotion,~/.vim/bundle/sparkup/vim/,~/.vim/bundle/vim-rails,~/.vim/bundle/L9,~/.vim/bundle/FuzzyFinder,~/.vim/bundle/command-t,~/.vim/bundle/vim-powerline,~/.vim,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,~/.vim/after,~/.vim/bundle/vundle/,~/.vim/bundle/vundle/after,~/.vim/bundle/vim-fugitive/after,~/.vim/bundle/vim-easymotion/after,~/.vim/bundle/sparkup/vim//after,~/.vim/bundle/vim-rails/after,~/.vim/bundle/L9/after,~/.vim/bundle/FuzzyFinder/after,~/.vim/bundle/command-t/after,~/.vim/bundle/vim-powerline/after
 set scrolloff=7
 set sessionoptions=options
 set shell=bash\ -l
@@ -218,14 +262,12 @@ set smartindent
 set smarttab
 set softtabstop=4
 set statusline=%02n:%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.class
-set suffixesadd=.java,.xml,.xml,.png,.9.png
+set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.class
+set suffixesadd=.java,.xml,.9.png,.png,.xml,.png,.9.png
 set noswapfile
 set tabline=%!TabCaptionLineFunction()
-set termencoding=utf-8
-set viminfo='10,
-set whichwrap=b,s,<,>,h,l
 set wildmenu
+set window=0
 set nowritebackup
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
@@ -234,12 +276,116 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-args ~/workspace_tb/rss_client/\[BufExplorer]
+badd +0 ~/workspace_tb/rss_client/src/hongbosb/tbdemo/MainActivity.java
+silent! argdel *
+edit ~/workspace_tb/rss_client/src/hongbosb/tbdemo/MainActivity.java
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
+argglobal
+setlocal autoindent
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal cindent
+setlocal cinkeys=0{,0},0),:,0#,!^F,o,O,e
+setlocal cinoptions=j1
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=
+setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
+setlocal commentstring=//%s
+setlocal complete=.,w,b,u,t,i
+setlocal completefunc=
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'java'
+setlocal filetype=java
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=0
+setlocal foldmarker={{{,}}}
+setlocal foldmethod=manual
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=croql
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=0
+setlocal imsearch=0
+setlocal include=
+setlocal includeexpr=substitute(v:fname,'\\.','/','g')
+setlocal indentexpr=GetJavaIndent_improved()
+setlocal indentkeys=0{,0},:,0#,!^F,o,O,e,0=extends,0=implements
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255
+setlocal keywordprg=
+set linebreak
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+set number
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal smartindent
+setlocal softtabstop=4
+setlocal nospell
+setlocal spellcapcheck=
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=%!Pl#Statusline(0,1)
+setlocal suffixesadd=.java
+setlocal noswapfile
+setlocal synmaxcol=3000
+if &syntax != 'java'
+setlocal syntax=java
+endif
+setlocal tabstop=8
+setlocal tags=~/workspace_tb/rss_client/.git/java.tags,~/workspace_tb/rss_client/.git/tags,./tags,tags
+setlocal textwidth=0
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+let s:l = 91 - ((25 * winheight(0) + 24) / 49)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+91
+normal! 08l
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif

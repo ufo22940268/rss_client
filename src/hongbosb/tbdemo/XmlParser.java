@@ -18,7 +18,7 @@ public class XmlParser {
     private InputStream mContentStream;
     private String[] mTitles;
 
-    public XmlParser (String content) {
+    public XmlParser(String content) {
         mContentStream = new ByteArrayInputStream(content.getBytes());
     }
 

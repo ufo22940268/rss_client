@@ -33,13 +33,14 @@ public class MainActivity extends Activity implements Callback {
 
     static public final int MESSAGE_REFRESH_ADAPTER = 0;
 
-    static public final String BUNDLE_BEAN_LIST = 0;
+    static public final String BUNDLE_BEAN_LIST = "bean_list";
 
     private String[] mImageUrls;
     private FlowAdapter mAdapter;
 
     private long mDate = 8;
     private Handler mMainHandler;
+    private LoaderHandler mLoaderThread;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,17 @@ public class MainActivity extends Activity implements Callback {
         ListView listView = getListView();
         mAdapter = new FlowAdapter();
         listView.setAdapter(mAdapter);
+
+        requestLoading();
+    }
+
+    private void requestLoading() {
+        if (mLoaderThread == null) {
+            mLoaderThread = new LoaderHandler();
+            mLoaderThread.start();
+        }
+
+        mLoaderThread.requestLoading();
     }
 
     @Override
@@ -60,7 +72,7 @@ public class MainActivity extends Activity implements Callback {
                 List<RssBean> beans 
                     = msg.getData().getParcelableArrayList(BUNDLE_BEAN_LIST);
                 if (beans == null) {
-                    return;
+                    return false;
                 }
 
                 FlowAdapter adapter = getAdapter();
@@ -88,7 +100,7 @@ public class MainActivity extends Activity implements Callback {
     }
 
     private String getUrl() {
-        return "http://192.168.121.10:8888/query?date=" + String.valueOf(getDateParam());
+        return "http://192.168.1.105:8888/query?date=" + String.valueOf(getDateParam());
     }
 
     private class FlowAdapter extends BaseAdapter {
@@ -138,7 +150,7 @@ public class MainActivity extends Activity implements Callback {
             super("hongbosbloader");
         }
 
-        private void requestLoading() {
+        public void requestLoading() {
             if (mHandler == null) {
                 mHandler = new Handler(getLooper(), this);
             }
@@ -148,20 +160,25 @@ public class MainActivity extends Activity implements Callback {
 
         @Override
         public boolean handleMessage(Message msg) {
-            ArrayList<RssBean> beans = loadXmlData();
+            ArrayList<RssBean> beans = new ArrayList<RssBean>(loadXmlData());
+            System.out.println("++++++++++++++++++++" + beans + "++++++++++++++++++++");
 
             Bundle bundle = new Bundle();
-            bundle.putParcelableArrayList(beans);
-            Message msg = new Message();
-            msg.setData(bundle);
-            msg.what = MESSAGE_REFRESH_ADAPTER;
-            mMainHandler.setMessage(msg);
+            bundle.putParcelableArrayList(BUNDLE_BEAN_LIST, beans);
+            Message m = new Message();
+            m.setData(bundle);
+            m.what = MESSAGE_REFRESH_ADAPTER;
+            mMainHandler.sendMessage(m);
 
             return true;
         }
 
         private List<RssBean> loadXmlData() {
             String content = loadContent();
+            if (content == null) {
+                return null;
+            }
+
             XmlParser parser = new XmlParser(content);
             List<RssBean> beans = parser.startParsing();
             return beans;
@@ -170,6 +187,7 @@ public class MainActivity extends Activity implements Callback {
         private String loadContent() {
             try {
                 URL url = new URL(getUrl());
+                System.out.println("++++++++++++++++++++" + url.toString() + "++++++++++++++++++++");
                 HttpURLConnection conn = (HttpURLConnection)url.openConnection();
                 BufferedInputStream in = new BufferedInputStream(conn.getInputStream());
                 BufferedReader reader = new BufferedReader(new InputStreamReader(in));
