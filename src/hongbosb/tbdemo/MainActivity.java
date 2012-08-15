@@ -67,7 +67,6 @@ public class MainActivity extends Activity implements Callback {
                 requestLoading();
             }
         });
-        
     }
 
     private void requestLoading() {
@@ -119,7 +118,7 @@ public class MainActivity extends Activity implements Callback {
     }
 
     private String getUrl() {
-        return "http://192.168.121.10:8888/query?date=" + String.valueOf(getDateParam());
+        return "http://192.168.1.105:8888/query?date=" + String.valueOf(getDateParam());
     }
 
     private class FlowAdapter extends BaseAdapter {
@@ -131,7 +130,7 @@ public class MainActivity extends Activity implements Callback {
         }
 
         public void addBeans(List<RssBean> beans) {
-            mBeans.add(beans);
+            mBeans.addAll(beans);
         }
 
         @Override

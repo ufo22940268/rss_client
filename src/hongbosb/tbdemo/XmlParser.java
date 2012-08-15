@@ -65,6 +65,15 @@ public class XmlParser {
             String name = node.getNodeName();
             if ("title".equals(name)) {
                 bean.title = node.getTextContent();
+            } else if ("guid".equals(name)) {
+                bean.guid = node.getTextContent();
+            } else if ("date".equals(name)) {
+                node.getTextContent();
+                //bean.date = node.getTextContent();
+            } else if ("link".equals(name)) {
+                bean.link = node.getTextContent();
+            } else {
+                System.out.println("++++++++++++++++++++" + "this node haven't implemented yet." + "++++++++++++++++++++");
             }
             return bean;
         }
