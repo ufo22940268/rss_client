@@ -41,6 +41,7 @@ public class MainActivity extends Activity implements Callback {
     private long mDate = 8;
     private Handler mMainHandler;
     private LoaderHandler mLoaderThread;
+    private PullToRefreshListView mPullRefreshListView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,11 +50,24 @@ public class MainActivity extends Activity implements Callback {
 
         mMainHandler = new Handler(this);
 
+        mPullRefreshListView = (PullToRefreshListView) findViewById(R.id.list);
+        regiestPullListener();
+
         ListView listView = getListView();
         mAdapter = new FlowAdapter();
         listView.setAdapter(mAdapter);
 
         requestLoading();
+    }
+
+    private void regiestPullListener() {
+        mPullRefreshListView.setOnRefreshListener(new OnRefreshListener<ListView>() {
+            @Override
+            public void onRefresh(PullToRefreshBase<ListView> refreshView) {
+                requestLoading();
+            }
+        });
+        
     }
 
     private void requestLoading() {
@@ -75,13 +89,18 @@ public class MainActivity extends Activity implements Callback {
                     return false;
                 }
 
-                FlowAdapter adapter = getAdapter();
-                if (adapter.getCount() == 0) {
-                    adapter.setBeans(beans);
-                    adapter.notifyDataSetChanged();
-                }
+                addDataToAdapter(beans);
         }
         return true;
+    }
+
+    private void addDataToAdapter(List<RssBean> beans) {
+        FlowAdapter adapter = getAdapter();
+        if (adapter != null) {
+            adapter.addBeans(beans);
+            adapter.notifyDataSetChanged();
+            mPullRefreshListView.onRefreshComplete();
+        }
     }
 
     private ListView getListView() {
@@ -100,15 +119,19 @@ public class MainActivity extends Activity implements Callback {
     }
 
     private String getUrl() {
-        return "http://192.168.1.105:8888/query?date=" + String.valueOf(getDateParam());
+        return "http://192.168.121.10:8888/query?date=" + String.valueOf(getDateParam());
     }
 
     private class FlowAdapter extends BaseAdapter {
 
         private List<RssBean> mBeans;
 
-        private void setBeans(List<RssBean> beans) {
-            mBeans = beans;
+        private FlowAdapter() {
+            mBeans = new ArrayList<RssBean>();
+        }
+
+        public void addBeans(List<RssBean> beans) {
+            mBeans.add(beans);
         }
 
         @Override
