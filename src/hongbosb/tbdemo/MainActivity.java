@@ -22,6 +22,7 @@ import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.util.*;
 
+import hongbosb.tbdemo.utils.*;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
@@ -123,14 +124,16 @@ public class MainActivity extends Activity implements Callback {
 
     private class FlowAdapter extends BaseAdapter {
 
-        private List<RssBean> mBeans;
+        private LinkedList<RssBean> mBeans;
 
         private FlowAdapter() {
-            mBeans = new ArrayList<RssBean>();
+            mBeans = new LinkedList<RssBean>();
         }
 
+        //TODO:It will add all the beans fetch from server, but we
+        //only need to add newer beans.
         public void addBeans(List<RssBean> beans) {
-            mBeans.addAll(beans);
+            mBeans.addAll(0, ListUtils.diff(mBeans, beans));
         }
 
         @Override

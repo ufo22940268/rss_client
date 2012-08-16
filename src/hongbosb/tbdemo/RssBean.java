@@ -36,10 +36,20 @@ public class RssBean implements Parcelable {
     public boolean equals(Object o) {
         if (o instanceof RssBean) {
             RssBean ro = (RssBean)o;
-            return ro.guid == guid;
+            if (guid == null || ro.guid == null) {
+                return false;
+            }
+
+            return ro.guid.equals(guid);
         } else {
             return false;
+
         }
+    }
+
+    @Override
+    public int hashCode() {
+        return 1;
     }
 
     public static final Parcelable.Creator<RssBean> CREATOR

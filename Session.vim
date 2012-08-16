@@ -27,7 +27,10 @@ vnoremap $2 `>a]`<i[
 vnoremap $1 `>a)`<i(
 snoremap % b<BS>%
 snoremap ' b<BS>'
+map ,ti :!adb shell am instrument -w -e class hongbosb.tbdemo.MainTest hongbosb.tbdemo.tests/android.test.InstrumentationTestRunner
 map ,tl :!adb shell am start -n  hongbosb.tbdemo/.MainActivity 
+vmap ,4 :set ft=javascript
+vmap ,3 :set syntax=python
 nmap <silent> ,cv <Plug>VCSVimDiff
 nmap <silent> ,cu <Plug>VCSUpdate
 nmap <silent> ,cU <Plug>VCSUnlock
@@ -149,9 +152,7 @@ noremap ,cd :call CdToProjectRoot()
 nmap ,fu :se ff=unix
 nmap ,fd :se ff=dos
 map ,$ :syntax sync fromstart
-vmap ,4 :set ft=javascript
 omap ,4 :set ft=javascript
-vmap ,3 :set syntax=python
 omap ,3 :set syntax=python
 map ,2 :set syntax=xhtml
 map ,1 :set syntax=cheetah
@@ -246,7 +247,7 @@ set incsearch
 set keywordprg=androiddoc.py
 set laststatus=2
 set lazyredraw
-set makeprg=ant\ clean\ debug\ install
+set makeprg=cd\ tests&&ant\ debug\ install
 set matchtime=8
 set modelines=0
 set mouse=a
@@ -276,9 +277,9 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 ~/workspace_tb/rss_client/src/hongbosb/tbdemo/MainActivity.java
+badd +51 ~/workspace_tb/rss_client/tests/src/hongbosb/tbdemo/MainTest.java
 silent! argdel *
-edit ~/workspace_tb/rss_client/src/hongbosb/tbdemo/MainActivity.java
+edit ~/workspace_tb/rss_client/tests/src/hongbosb/tbdemo/MainTest.java
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -380,11 +381,11 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
-let s:l = 91 - ((25 * winheight(0) + 24) / 49)
+let s:l = 38 - ((30 * winheight(0) + 24) / 49)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-91
+38
 normal! 08l
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf

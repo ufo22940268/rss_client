@@ -1,21 +1,39 @@
 	Session.vim	/^cnoremap  <Home>$/;"	m
+	tests/Session.vim	/^cnoremap  <Home>$/;"	m
 	Session.vim	/^cnoremap  <End>$/;"	m
+	tests/Session.vim	/^cnoremap  <End>$/;"	m
 		Session.vim	/^inoremap <silent> 	 =TriggerSnippet()$/;"	m
+		tests/Session.vim	/^inoremap <silent> 	 =TriggerSnippet()$/;"	m
 	Session.vim	/^map   \/$/;"	m
+	tests/Session.vim	/^map   \/$/;"	m
 	Session.vim	/^cnoremap  $/;"	m
+	tests/Session.vim	/^cnoremap  $/;"	m
 	Session.vim	/^nmap  :JavaBrowser$/;"	m
+	tests/Session.vim	/^nmap  :JavaBrowser$/;"	m
 	Session.vim	/^imap  <Plug>SuperTabForward$/;"	m
+	tests/Session.vim	/^imap  <Plug>SuperTabForward$/;"	m
 	Session.vim	/^imap  <Plug>SuperTabBackward$/;"	m
+	tests/Session.vim	/^imap  <Plug>SuperTabBackward$/;"	m
 		Session.vim	/^inoremap <silent> 	 =ShowAvailableSnips()$/;"	m
+		tests/Session.vim	/^inoremap <silent> 	 =ShowAvailableSnips()$/;"	m
 	Session.vim	/^map  :WMToggle$/;"	m
+	tests/Session.vim	/^map  :WMToggle$/;"	m
 c	Session.vim	/^nmap c :cs find c =expand("<cword>")$/;"	m
+c	tests/Session.vim	/^nmap c :cs find c =expand("<cword>")$/;"	m
 d	Session.vim	/^nmap d :cs find d =expand("<cword>")$/;"	m
+d	tests/Session.vim	/^nmap d :cs find d =expand("<cword>")$/;"	m
 e	Session.vim	/^nmap e :cs find e =expand("<cword>")$/;"	m
+e	tests/Session.vim	/^nmap e :cs find e =expand("<cword>")$/;"	m
 f	Session.vim	/^nmap f :cs find f =expand("<cfile>")$/;"	m
+f	tests/Session.vim	/^nmap f :cs find f =expand("<cfile>")$/;"	m
 g	Session.vim	/^nmap g :cs find g =expand("<cword>")$/;"	m
+g	tests/Session.vim	/^nmap g :cs find g =expand("<cword>")$/;"	m
 i	Session.vim	/^nmap i :cs find i ^=expand("<cfile>")$/;"	m
+i	tests/Session.vim	/^nmap i :cs find i ^=expand("<cfile>")$/;"	m
 s	Session.vim	/^nmap s :cs find s =expand("<cword>")$/;"	m
+s	tests/Session.vim	/^nmap s :cs find s =expand("<cword>")$/;"	m
 t	Session.vim	/^nmap t :cs find t =expand("<cword>")$/;"	m
+t	tests/Session.vim	/^nmap t :cs find t =expand("<cword>")$/;"	m
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
@@ -23,200 +41,390 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 $<	Session.vim	/^vnoremap $< `>a -->`<i<!-- $/;"	m
+$<	tests/Session.vim	/^vnoremap $< `>a -->`<i<!-- $/;"	m
 $$	Session.vim	/^vnoremap $$ `>a"`<i"$/;"	m
+$$	tests/Session.vim	/^vnoremap $$ `>a"`<i"$/;"	m
 $/	Session.vim	/^vnoremap $\/ `>a*\/`<i\/*$/;"	m
+$/	tests/Session.vim	/^vnoremap $\/ `>a*\/`<i\/*$/;"	m
 $1	Session.vim	/^vnoremap $1 `>a)`<i($/;"	m
+$1	tests/Session.vim	/^vnoremap $1 `>a)`<i($/;"	m
 $2	Session.vim	/^vnoremap $2 `>a]`<i[$/;"	m
+$2	tests/Session.vim	/^vnoremap $2 `>a]`<i[$/;"	m
 $3	Session.vim	/^vnoremap $3 `>a}`<i{$/;"	m
+$3	tests/Session.vim	/^vnoremap $3 `>a}`<i{$/;"	m
 $q	Session.vim	/^vnoremap $q `>a'`<i'$/;"	m
+$q	tests/Session.vim	/^vnoremap $q `>a'`<i'$/;"	m
 $td	Session.vim	/^cnoremap $td tabnew ~\/Desktop\/$/;"	m
+$td	tests/Session.vim	/^cnoremap $td tabnew ~\/Desktop\/$/;"	m
 $th	Session.vim	/^cnoremap $th tabnew ~\/$/;"	m
+$th	tests/Session.vim	/^cnoremap $th tabnew ~\/$/;"	m
 $w	Session.vim	/^vnoremap $w `>a"`<i"$/;"	m
+$w	tests/Session.vim	/^vnoremap $w `>a"`<i"$/;"	m
 ,$	Session.vim	/^map ,$ :syntax sync fromstart$/;"	m
+,$	tests/Session.vim	/^map ,$ :syntax sync fromstart$/;"	m
 ,,B	Session.vim	/^nnoremap <silent> ,,B :call EasyMotion#WBW(0, 1)$/;"	m
 ,,B	Session.vim	/^onoremap <silent> ,,B :call EasyMotion#WBW(0, 1)$/;"	m
 ,,B	Session.vim	/^vnoremap <silent> ,,B :call EasyMotion#WBW(1, 1)$/;"	m
+,,B	tests/Session.vim	/^nnoremap <silent> ,,B :call EasyMotion#WBW(0, 1)$/;"	m
+,,B	tests/Session.vim	/^onoremap <silent> ,,B :call EasyMotion#WBW(0, 1)$/;"	m
+,,B	tests/Session.vim	/^vnoremap <silent> ,,B :call EasyMotion#WBW(1, 1)$/;"	m
 ,,E	Session.vim	/^nnoremap <silent> ,,E :call EasyMotion#EW(0, 0)$/;"	m
 ,,E	Session.vim	/^onoremap <silent> ,,E :call EasyMotion#EW(0, 0)$/;"	m
 ,,E	Session.vim	/^vnoremap <silent> ,,E :call EasyMotion#EW(1, 0)$/;"	m
+,,E	tests/Session.vim	/^nnoremap <silent> ,,E :call EasyMotion#EW(0, 0)$/;"	m
+,,E	tests/Session.vim	/^onoremap <silent> ,,E :call EasyMotion#EW(0, 0)$/;"	m
+,,E	tests/Session.vim	/^vnoremap <silent> ,,E :call EasyMotion#EW(1, 0)$/;"	m
 ,,F	Session.vim	/^nnoremap <silent> ,,F :call EasyMotion#F(0, 1)$/;"	m
 ,,F	Session.vim	/^onoremap <silent> ,,F :call EasyMotion#F(0, 1)$/;"	m
 ,,F	Session.vim	/^vnoremap <silent> ,,F :call EasyMotion#F(1, 1)$/;"	m
+,,F	tests/Session.vim	/^nnoremap <silent> ,,F :call EasyMotion#F(0, 1)$/;"	m
+,,F	tests/Session.vim	/^onoremap <silent> ,,F :call EasyMotion#F(0, 1)$/;"	m
+,,F	tests/Session.vim	/^vnoremap <silent> ,,F :call EasyMotion#F(1, 1)$/;"	m
 ,,N	Session.vim	/^nnoremap <silent> ,,N :call EasyMotion#Search(0, 1)$/;"	m
 ,,N	Session.vim	/^onoremap <silent> ,,N :call EasyMotion#Search(0, 1)$/;"	m
 ,,N	Session.vim	/^vnoremap <silent> ,,N :call EasyMotion#Search(1, 1)$/;"	m
+,,N	tests/Session.vim	/^nnoremap <silent> ,,N :call EasyMotion#Search(0, 1)$/;"	m
+,,N	tests/Session.vim	/^onoremap <silent> ,,N :call EasyMotion#Search(0, 1)$/;"	m
+,,N	tests/Session.vim	/^vnoremap <silent> ,,N :call EasyMotion#Search(1, 1)$/;"	m
 ,,T	Session.vim	/^nnoremap <silent> ,,T :call EasyMotion#T(0, 1)$/;"	m
 ,,T	Session.vim	/^onoremap <silent> ,,T :call EasyMotion#T(0, 1)$/;"	m
 ,,T	Session.vim	/^vnoremap <silent> ,,T :call EasyMotion#T(1, 1)$/;"	m
+,,T	tests/Session.vim	/^nnoremap <silent> ,,T :call EasyMotion#T(0, 1)$/;"	m
+,,T	tests/Session.vim	/^onoremap <silent> ,,T :call EasyMotion#T(0, 1)$/;"	m
+,,T	tests/Session.vim	/^vnoremap <silent> ,,T :call EasyMotion#T(1, 1)$/;"	m
 ,,W	Session.vim	/^nnoremap <silent> ,,W :call EasyMotion#WBW(0, 0)$/;"	m
 ,,W	Session.vim	/^onoremap <silent> ,,W :call EasyMotion#WBW(0, 0)$/;"	m
 ,,W	Session.vim	/^vnoremap <silent> ,,W :call EasyMotion#WBW(1, 0)$/;"	m
+,,W	tests/Session.vim	/^nnoremap <silent> ,,W :call EasyMotion#WBW(0, 0)$/;"	m
+,,W	tests/Session.vim	/^onoremap <silent> ,,W :call EasyMotion#WBW(0, 0)$/;"	m
+,,W	tests/Session.vim	/^vnoremap <silent> ,,W :call EasyMotion#WBW(1, 0)$/;"	m
 ,,b	Session.vim	/^nnoremap <silent> ,,b :call EasyMotion#WB(0, 1)$/;"	m
 ,,b	Session.vim	/^onoremap <silent> ,,b :call EasyMotion#WB(0, 1)$/;"	m
 ,,b	Session.vim	/^vnoremap <silent> ,,b :call EasyMotion#WB(1, 1)$/;"	m
+,,b	tests/Session.vim	/^nnoremap <silent> ,,b :call EasyMotion#WB(0, 1)$/;"	m
+,,b	tests/Session.vim	/^onoremap <silent> ,,b :call EasyMotion#WB(0, 1)$/;"	m
+,,b	tests/Session.vim	/^vnoremap <silent> ,,b :call EasyMotion#WB(1, 1)$/;"	m
 ,,e	Session.vim	/^nnoremap <silent> ,,e :call EasyMotion#E(0, 0)$/;"	m
 ,,e	Session.vim	/^onoremap <silent> ,,e :call EasyMotion#E(0, 0)$/;"	m
 ,,e	Session.vim	/^vnoremap <silent> ,,e :call EasyMotion#E(1, 0)$/;"	m
+,,e	tests/Session.vim	/^nnoremap <silent> ,,e :call EasyMotion#E(0, 0)$/;"	m
+,,e	tests/Session.vim	/^onoremap <silent> ,,e :call EasyMotion#E(0, 0)$/;"	m
+,,e	tests/Session.vim	/^vnoremap <silent> ,,e :call EasyMotion#E(1, 0)$/;"	m
 ,,f	Session.vim	/^nnoremap <silent> ,,f :call EasyMotion#F(0, 0)$/;"	m
 ,,f	Session.vim	/^onoremap <silent> ,,f :call EasyMotion#F(0, 0)$/;"	m
 ,,f	Session.vim	/^vnoremap <silent> ,,f :call EasyMotion#F(1, 0)$/;"	m
+,,f	tests/Session.vim	/^nnoremap <silent> ,,f :call EasyMotion#F(0, 0)$/;"	m
+,,f	tests/Session.vim	/^onoremap <silent> ,,f :call EasyMotion#F(0, 0)$/;"	m
+,,f	tests/Session.vim	/^vnoremap <silent> ,,f :call EasyMotion#F(1, 0)$/;"	m
 ,,gE	Session.vim	/^nnoremap <silent> ,,gE :call EasyMotion#EW(0, 1)$/;"	m
 ,,gE	Session.vim	/^onoremap <silent> ,,gE :call EasyMotion#EW(0, 1)$/;"	m
 ,,gE	Session.vim	/^vnoremap <silent> ,,gE :call EasyMotion#EW(1, 1)$/;"	m
+,,gE	tests/Session.vim	/^nnoremap <silent> ,,gE :call EasyMotion#EW(0, 1)$/;"	m
+,,gE	tests/Session.vim	/^onoremap <silent> ,,gE :call EasyMotion#EW(0, 1)$/;"	m
+,,gE	tests/Session.vim	/^vnoremap <silent> ,,gE :call EasyMotion#EW(1, 1)$/;"	m
 ,,ge	Session.vim	/^nnoremap <silent> ,,ge :call EasyMotion#E(0, 1)$/;"	m
 ,,ge	Session.vim	/^onoremap <silent> ,,ge :call EasyMotion#E(0, 1)$/;"	m
 ,,ge	Session.vim	/^vnoremap <silent> ,,ge :call EasyMotion#E(1, 1)$/;"	m
+,,ge	tests/Session.vim	/^nnoremap <silent> ,,ge :call EasyMotion#E(0, 1)$/;"	m
+,,ge	tests/Session.vim	/^onoremap <silent> ,,ge :call EasyMotion#E(0, 1)$/;"	m
+,,ge	tests/Session.vim	/^vnoremap <silent> ,,ge :call EasyMotion#E(1, 1)$/;"	m
 ,,j	Session.vim	/^nnoremap <silent> ,,j :call EasyMotion#JK(0, 0)$/;"	m
 ,,j	Session.vim	/^onoremap <silent> ,,j :call EasyMotion#JK(0, 0)$/;"	m
 ,,j	Session.vim	/^vnoremap <silent> ,,j :call EasyMotion#JK(1, 0)$/;"	m
+,,j	tests/Session.vim	/^nnoremap <silent> ,,j :call EasyMotion#JK(0, 0)$/;"	m
+,,j	tests/Session.vim	/^onoremap <silent> ,,j :call EasyMotion#JK(0, 0)$/;"	m
+,,j	tests/Session.vim	/^vnoremap <silent> ,,j :call EasyMotion#JK(1, 0)$/;"	m
 ,,k	Session.vim	/^nnoremap <silent> ,,k :call EasyMotion#JK(0, 1)$/;"	m
 ,,k	Session.vim	/^onoremap <silent> ,,k :call EasyMotion#JK(0, 1)$/;"	m
 ,,k	Session.vim	/^vnoremap <silent> ,,k :call EasyMotion#JK(1, 1)$/;"	m
+,,k	tests/Session.vim	/^nnoremap <silent> ,,k :call EasyMotion#JK(0, 1)$/;"	m
+,,k	tests/Session.vim	/^onoremap <silent> ,,k :call EasyMotion#JK(0, 1)$/;"	m
+,,k	tests/Session.vim	/^vnoremap <silent> ,,k :call EasyMotion#JK(1, 1)$/;"	m
 ,,n	Session.vim	/^nnoremap <silent> ,,n :call EasyMotion#Search(0, 0)$/;"	m
 ,,n	Session.vim	/^onoremap <silent> ,,n :call EasyMotion#Search(0, 0)$/;"	m
 ,,n	Session.vim	/^vnoremap <silent> ,,n :call EasyMotion#Search(1, 0)$/;"	m
+,,n	tests/Session.vim	/^nnoremap <silent> ,,n :call EasyMotion#Search(0, 0)$/;"	m
+,,n	tests/Session.vim	/^onoremap <silent> ,,n :call EasyMotion#Search(0, 0)$/;"	m
+,,n	tests/Session.vim	/^vnoremap <silent> ,,n :call EasyMotion#Search(1, 0)$/;"	m
 ,,t	Session.vim	/^nnoremap <silent> ,,t :call EasyMotion#T(0, 0)$/;"	m
 ,,t	Session.vim	/^onoremap <silent> ,,t :call EasyMotion#T(0, 0)$/;"	m
 ,,t	Session.vim	/^vnoremap <silent> ,,t :call EasyMotion#T(1, 0)$/;"	m
+,,t	tests/Session.vim	/^nnoremap <silent> ,,t :call EasyMotion#T(0, 0)$/;"	m
+,,t	tests/Session.vim	/^onoremap <silent> ,,t :call EasyMotion#T(0, 0)$/;"	m
+,,t	tests/Session.vim	/^vnoremap <silent> ,,t :call EasyMotion#T(1, 0)$/;"	m
 ,,w	Session.vim	/^nnoremap <silent> ,,w :call EasyMotion#WB(0, 0)$/;"	m
 ,,w	Session.vim	/^onoremap <silent> ,,w :call EasyMotion#WB(0, 0)$/;"	m
 ,,w	Session.vim	/^vnoremap <silent> ,,w :call EasyMotion#WB(1, 0)$/;"	m
+,,w	tests/Session.vim	/^nnoremap <silent> ,,w :call EasyMotion#WB(0, 0)$/;"	m
+,,w	tests/Session.vim	/^onoremap <silent> ,,w :call EasyMotion#WB(0, 0)$/;"	m
+,,w	tests/Session.vim	/^vnoremap <silent> ,,w :call EasyMotion#WB(1, 0)$/;"	m
 ,0	Session.vim	/^nnoremap ,0 :10b$/;"	m
+,0	tests/Session.vim	/^nnoremap ,0 :10b$/;"	m
 ,1	Session.vim	/^map ,1 :set syntax=cheetah$/;"	m
+,1	tests/Session.vim	/^map ,1 :set syntax=cheetah$/;"	m
 ,2	Session.vim	/^map ,2 :set syntax=xhtml$/;"	m
+,2	tests/Session.vim	/^map ,2 :set syntax=xhtml$/;"	m
 ,3	Session.vim	/^nnoremap ,3 :3b$/;"	m
 ,3	Session.vim	/^omap ,3 :set syntax=python$/;"	m
 ,3	Session.vim	/^vmap ,3 :set syntax=python$/;"	m
+,3	tests/Session.vim	/^nnoremap ,3 :3b$/;"	m
+,3	tests/Session.vim	/^omap ,3 :set syntax=python$/;"	m
+,3	tests/Session.vim	/^vmap ,3 :set syntax=python$/;"	m
 ,4	Session.vim	/^nnoremap ,4 :4b$/;"	m
 ,4	Session.vim	/^omap ,4 :set ft=javascript$/;"	m
 ,4	Session.vim	/^vmap ,4 :set ft=javascript$/;"	m
+,4	tests/Session.vim	/^nnoremap ,4 :4b$/;"	m
+,4	tests/Session.vim	/^omap ,4 :set ft=javascript$/;"	m
+,4	tests/Session.vim	/^vmap ,4 :set ft=javascript$/;"	m
 ,5	Session.vim	/^nnoremap ,5 :5b$/;"	m
+,5	tests/Session.vim	/^nnoremap ,5 :5b$/;"	m
 ,6	Session.vim	/^nnoremap ,6 :6b$/;"	m
+,6	tests/Session.vim	/^nnoremap ,6 :6b$/;"	m
 ,7	Session.vim	/^nnoremap ,7 :7b$/;"	m
+,7	tests/Session.vim	/^nnoremap ,7 :7b$/;"	m
 ,8	Session.vim	/^nnoremap ,8 :8b$/;"	m
+,8	tests/Session.vim	/^nnoremap ,8 :8b$/;"	m
 ,9	Session.vim	/^nnoremap ,9 :9b$/;"	m
+,9	tests/Session.vim	/^nnoremap ,9 :9b$/;"	m
 ,ac	Session.vim	/^map ,ac :!adb_connect&&adb logcat -c$/;"	m
+,ac	tests/Session.vim	/^map ,ac :!adb_connect&&adb logcat -c$/;"	m
 ,al	Session.vim	/^map ,al :!adb_connect&&adb logcat$/;"	m
+,al	tests/Session.vim	/^map ,al :!adb_connect&&adb logcat$/;"	m
 ,b	Session.vim	/^nnoremap <silent> ,b :CommandTBuffer$/;"	m
+,b	tests/Session.vim	/^nnoremap <silent> ,b :CommandTBuffer$/;"	m
 ,bc	Session.vim	/^noremap <silent> ,bc :!find -name *.java > cscope.files && cscope -b -q$/;"	m
+,bc	tests/Session.vim	/^noremap <silent> ,bc :!find -name *.java > cscope.files && cscope -b -q$/;"	m
 ,bt	Session.vim	/^map <silent> ,bt :!ctags -R --exclude=\\.* $/;"	m
+,bt	tests/Session.vim	/^noremap ,bt :!find .. -name *.java -exec ctags '{}' \\; $/;"	m
 ,cD	Session.vim	/^nmap <silent> ,cD <Plug>VCSDelete$/;"	m
+,cD	tests/Session.vim	/^nmap <silent> ,cD <Plug>VCSDelete$/;"	m
 ,cG	Session.vim	/^nmap <silent> ,cG <Plug>VCSClearAndGotoOriginal$/;"	m
+,cG	tests/Session.vim	/^nmap <silent> ,cG <Plug>VCSClearAndGotoOriginal$/;"	m
 ,cL	Session.vim	/^nmap <silent> ,cL <Plug>VCSLock$/;"	m
+,cL	tests/Session.vim	/^nmap <silent> ,cL <Plug>VCSLock$/;"	m
 ,cN	Session.vim	/^nmap <silent> ,cN <Plug>VCSSplitAnnotate$/;"	m
+,cN	tests/Session.vim	/^nmap <silent> ,cN <Plug>VCSSplitAnnotate$/;"	m
 ,cU	Session.vim	/^nmap <silent> ,cU <Plug>VCSUnlock$/;"	m
+,cU	tests/Session.vim	/^nmap <silent> ,cU <Plug>VCSUnlock$/;"	m
 ,ca	Session.vim	/^nmap <silent> ,ca <Plug>VCSAdd$/;"	m
+,ca	tests/Session.vim	/^nmap <silent> ,ca <Plug>VCSAdd$/;"	m
 ,caL	Session.vim	/^nmap ,caL <Plug>CalendarH$/;"	m
+,caL	tests/Session.vim	/^nmap ,caL <Plug>CalendarH$/;"	m
 ,cal	Session.vim	/^nmap ,cal <Plug>CalendarV$/;"	m
+,cal	tests/Session.vim	/^nmap ,cal <Plug>CalendarV$/;"	m
 ,cc	Session.vim	/^nmap <silent> ,cc <Plug>VCSCommit$/;"	m
+,cc	tests/Session.vim	/^nmap <silent> ,cc <Plug>VCSCommit$/;"	m
 ,cd	Session.vim	/^noremap ,cd :call CdToProjectRoot()$/;"	m
+,cd	tests/Session.vim	/^noremap ,cd :call CdToProjectRoot()$/;"	m
 ,cg	Session.vim	/^nmap <silent> ,cg <Plug>VCSGotoOriginal$/;"	m
+,cg	tests/Session.vim	/^nmap <silent> ,cg <Plug>VCSGotoOriginal$/;"	m
 ,ci	Session.vim	/^nmap <silent> ,ci <Plug>VCSInfo$/;"	m
+,ci	tests/Session.vim	/^nmap <silent> ,ci <Plug>VCSInfo$/;"	m
 ,cl	Session.vim	/^nmap <silent> ,cl <Plug>VCSLog$/;"	m
+,cl	tests/Session.vim	/^nmap <silent> ,cl <Plug>VCSLog$/;"	m
 ,cn	Session.vim	/^nmap <silent> ,cn <Plug>VCSAnnotate$/;"	m
+,cn	tests/Session.vim	/^nmap <silent> ,cn <Plug>VCSAnnotate$/;"	m
 ,cq	Session.vim	/^nmap <silent> ,cq <Plug>VCSRevert$/;"	m
+,cq	tests/Session.vim	/^nmap <silent> ,cq <Plug>VCSRevert$/;"	m
 ,cr	Session.vim	/^nmap <silent> ,cr <Plug>VCSReview$/;"	m
+,cr	tests/Session.vim	/^nmap <silent> ,cr <Plug>VCSReview$/;"	m
 ,cs	Session.vim	/^nmap <silent> ,cs <Plug>VCSStatus$/;"	m
+,cs	tests/Session.vim	/^nmap <silent> ,cs <Plug>VCSStatus$/;"	m
 ,cu	Session.vim	/^nmap <silent> ,cu <Plug>VCSUpdate$/;"	m
+,cu	tests/Session.vim	/^nmap <silent> ,cu <Plug>VCSUpdate$/;"	m
 ,cv	Session.vim	/^nmap <silent> ,cv <Plug>VCSVimDiff$/;"	m
+,cv	tests/Session.vim	/^nmap <silent> ,cv <Plug>VCSVimDiff$/;"	m
 ,dd	Session.vim	/^noremap ,dd :call StartDebug()$/;"	m
+,dd	tests/Session.vim	/^noremap ,dd :call StartDebug()$/;"	m
 ,di	Session.vim	/^noremap ,di :call DebugInnerContacts()$/;"	m
+,di	tests/Session.vim	/^noremap ,di :call DebugInnerContacts()$/;"	m
 ,fd	Session.vim	/^nmap ,fd :se ff=dos$/;"	m
+,fd	tests/Session.vim	/^nmap ,fd :se ff=dos$/;"	m
 ,fu	Session.vim	/^nmap ,fu :se ff=unix$/;"	m
+,fu	tests/Session.vim	/^nmap ,fu :se ff=unix$/;"	m
 ,m	Session.vim	/^noremap ,m :make$/;"	m
+,m	tests/Session.vim	/^noremap ,m :make$/;"	m
 ,p	Session.vim	/^vnoremap ,p :call EchoSelectionLines()$/;"	m
+,p	tests/Session.vim	/^vnoremap ,p :call EchoSelectionLines()$/;"	m
 ,q	Session.vim	/^map ,q :e ~\/buffer$/;"	m
+,q	tests/Session.vim	/^map ,q :e ~\/buffer$/;"	m
 ,rr	Session.vim	/^nmap ,rr :call ReloadSnippets(snippets_dir, &filetype)$/;"	m
+,rr	tests/Session.vim	/^nmap ,rr :call ReloadSnippets(snippets_dir, &filetype)$/;"	m
 ,s	Session.vim	/^map ,s :so ~\/.vimrc$/;"	m
+,s	tests/Session.vim	/^map ,s :so ~\/.vimrc$/;"	m
 ,s?	Session.vim	/^map ,s? z=$/;"	m
+,s?	tests/Session.vim	/^map ,s? z=$/;"	m
 ,sa	Session.vim	/^map ,sa zg$/;"	m
+,sa	tests/Session.vim	/^map ,sa zg$/;"	m
 ,scd	Session.vim	/^nmap ,scd <Plug>SQLUGetColumnDef$/;"	m
+,scd	tests/Session.vim	/^nmap ,scd <Plug>SQLUGetColumnDef$/;"	m
 ,scdt	Session.vim	/^nmap ,scdt <Plug>SQLUGetColumnDataType$/;"	m
+,scdt	tests/Session.vim	/^nmap ,scdt <Plug>SQLUGetColumnDataType$/;"	m
 ,scl	Session.vim	/^nmap ,scl <Plug>SQLUCreateColumnList$/;"	m
+,scl	tests/Session.vim	/^nmap ,scl <Plug>SQLUCreateColumnList$/;"	m
 ,scp	Session.vim	/^nmap ,scp <Plug>SQLUCreateProcedure$/;"	m
+,scp	tests/Session.vim	/^nmap ,scp <Plug>SQLUCreateProcedure$/;"	m
 ,sf	Session.vim	/^nmap ,sf <Plug>SQLUFormatter$/;"	m
 ,sf	Session.vim	/^vmap ,sf <Plug>SQLUFormatter$/;"	m
+,sf	tests/Session.vim	/^nmap ,sf <Plug>SQLUFormatter$/;"	m
+,sf	tests/Session.vim	/^vmap ,sf <Plug>SQLUFormatter$/;"	m
 ,sfr	Session.vim	/^nmap ,sfr <Plug>SQLUFormatStmts$/;"	m
 ,sfr	Session.vim	/^vmap ,sfr <Plug>SQLUFormatStmts$/;"	m
+,sfr	tests/Session.vim	/^nmap ,sfr <Plug>SQLUFormatStmts$/;"	m
+,sfr	tests/Session.vim	/^vmap ,sfr <Plug>SQLUFormatStmts$/;"	m
 ,sfs	Session.vim	/^nmap ,sfs <Plug>SQLUFormatter$/;"	m
 ,sfs	Session.vim	/^vmap ,sfs <Plug>SQLUFormatter$/;"	m
+,sfs	tests/Session.vim	/^nmap ,sfs <Plug>SQLUFormatter$/;"	m
+,sfs	tests/Session.vim	/^vmap ,sfs <Plug>SQLUFormatter$/;"	m
 ,sn	Session.vim	/^map ,sn ]$/;"	m
+,sn	tests/Session.vim	/^map ,sn ]$/;"	m
 ,sp	Session.vim	/^map ,sp [$/;"	m
+,sp	tests/Session.vim	/^map ,sp [$/;"	m
 ,t	Session.vim	/^nnoremap <silent> ,t :CommandT$/;"	m
+,t	tests/Session.vim	/^nnoremap <silent> ,t :CommandT$/;"	m
 ,tc	Session.vim	/^noremap ,tc :!adb_connect$/;"	m
+,tc	tests/Session.vim	/^noremap ,tc :!adb_connect$/;"	m
+,ti	Session.vim	/^map ,ti :!adb shell am instrument -w -e class hongbosb.tbdemo.MainTest hongbosb.tbdemo.tests\/android.test.InstrumentationTestRunner$/;"	m
+,ti	tests/Session.vim	/^map ,ti :!adb shell am instrument -w -e class hongbosb.tbdemo.MainTest hongbosb.tbdemo.tests\/android.test.InstrumentationTestRunner$/;"	m
 ,tl	Session.vim	/^map ,tl :!adb shell am start -n  hongbosb.tbdemo\/.MainActivity $/;"	m
+,tl	tests/Session.vim	/^map ,tl :!adb shell am start -n  hongbosb.tbdemo\/.MainActivity $/;"	m
 ,tr	Session.vim	/^noremap ,tr :!adb_connect&&adb shell stop && adb shell start$/;"	m
+,tr	tests/Session.vim	/^noremap ,tr :!adb_connect&&adb shell stop && adb shell start$/;"	m
 ,ts	Session.vim	/^noremap ,ts :!target_sync$/;"	m
+,ts	tests/Session.vim	/^noremap ,ts :!target_sync$/;"	m
 ,v	Session.vim	/^map ,v :e ~\/.vimrc$/;"	m
+,v	tests/Session.vim	/^map ,v :e ~\/.vimrc$/;"	m
 ,vcs	Session.vim	/^noremap ,vcs :e res\/values-zh-rCN\/strings.xml$/;"	m
+,vcs	tests/Session.vim	/^noremap ,vcs :e res\/values-zh-rCN\/strings.xml$/;"	m
 ,ves	Session.vim	/^noremap ,ves :e res\/values\/strings.xml$/;"	m
+,ves	tests/Session.vim	/^noremap ,ves :e res\/values\/strings.xml$/;"	m
 ,vjs	Session.vim	/^map ,vjs :sp ~\/.vim\/snippets\/java.snippets$/;"	m
+,vjs	tests/Session.vim	/^map ,vjs :sp ~\/.vim\/snippets\/java.snippets$/;"	m
 ,vp	Session.vim	/^map <silent> ,vp :!xdg-open %$/;"	m
+,vp	tests/Session.vim	/^map <silent> ,vp :!xdg-open %$/;"	m
 ,vxs	Session.vim	/^map ,vxs :sp ~\/.vim\/snippets\/xml.snippets$/;"	m
+,vxs	tests/Session.vim	/^map ,vxs :sp ~\/.vim\/snippets\/xml.snippets$/;"	m
 ,w	Session.vim	/^nmap ,w :w!$/;"	m
+,w	tests/Session.vim	/^nmap ,w :w!$/;"	m
 ,wc	Session.vim	/^map ,wc :call SwitchToProject("CONTACTS")$/;"	m
+,wc	tests/Session.vim	/^map ,wc :call SwitchToProject("CONTACTS")$/;"	m
 ,wf	Session.vim	/^map ,wf :call SwitchToProject("FRA")$/;"	m
+,wf	tests/Session.vim	/^map ,wf :call SwitchToProject("FRA")$/;"	m
 ,wh	Session.vim	/^map ,wh :call SwitchToProject("CALL_HISTORY")$/;"	m
+,wh	tests/Session.vim	/^map ,wh :call SwitchToProject("CALL_HISTORY")$/;"	m
 ,wp	Session.vim	/^map ,wp :call SwitchToProject("PROVIDER")$/;"	m
+,wp	tests/Session.vim	/^map ,wp :call SwitchToProject("PROVIDER")$/;"	m
 ,wr	Session.vim	/^map ,wr :call SwitchToProject("RES")$/;"	m
+,wr	tests/Session.vim	/^map ,wr :call SwitchToProject("RES")$/;"	m
 ,x	Session.vim	/^nmap ,x :xa!$/;"	m
+,x	tests/Session.vim	/^nmap ,x :xa!$/;"	m
 ,y	Session.vim	/^map ,y :YRShow$/;"	m
+,y	tests/Session.vim	/^map ,y :YRShow$/;"	m
 ,z	Session.vim	/^map ,z <Plug>ZoomWin$/;"	m
+,z	tests/Session.vim	/^map ,z <Plug>ZoomWin$/;"	m
 0	Session.vim	/^map 0 ^$/;"	m
-08l	Session.vim	/^normal! 08l$/;"	m
+0	tests/Session.vim	/^map 0 ^$/;"	m
+0	tests/Session.vim	/^normal! 0$/;"	m
+06l	Session.vim	/^normal! 06l$/;"	m
 <C-Tab>	Session.vim	/^inoremap <C-Tab> 	$/;"	m
+<C-Tab>	tests/Session.vim	/^inoremap <C-Tab> 	$/;"	m
 <F11>	Session.vim	/^nnoremap <silent> <F11> :call conque_term#exec_file()$/;"	m
+<F11>	tests/Session.vim	/^nnoremap <silent> <F11> :call conque_term#exec_file()$/;"	m
 <F2>	Session.vim	/^noremap <F2> :NERDTreeToggle$/;"	m
+<F2>	tests/Session.vim	/^noremap <F2> :NERDTreeToggle$/;"	m
 <F3>	Session.vim	/^map <F3> :Tlist$/;"	m
+<F3>	tests/Session.vim	/^map <F3> :Tlist$/;"	m
 <F9>	Session.vim	/^map <F9> ggVGg?$/;"	m
+<F9>	tests/Session.vim	/^map <F9> ggVGg?$/;"	m
 <Nul><Nul>c	Session.vim	/^nmap <Nul><Nul>c :vert scs find c =expand("<cword>")$/;"	m
+<Nul><Nul>c	tests/Session.vim	/^nmap <Nul><Nul>c :vert scs find c =expand("<cword>")$/;"	m
 <Nul><Nul>d	Session.vim	/^nmap <Nul><Nul>d :vert scs find d =expand("<cword>")$/;"	m
+<Nul><Nul>d	tests/Session.vim	/^nmap <Nul><Nul>d :vert scs find d =expand("<cword>")$/;"	m
 <Nul><Nul>e	Session.vim	/^nmap <Nul><Nul>e :vert scs find e =expand("<cword>")$/;"	m
+<Nul><Nul>e	tests/Session.vim	/^nmap <Nul><Nul>e :vert scs find e =expand("<cword>")$/;"	m
 <Nul><Nul>f	Session.vim	/^nmap <Nul><Nul>f :vert scs find f =expand("<cfile>")$/;"	m
+<Nul><Nul>f	tests/Session.vim	/^nmap <Nul><Nul>f :vert scs find f =expand("<cfile>")$/;"	m
 <Nul><Nul>g	Session.vim	/^nmap <Nul><Nul>g :vert scs find g =expand("<cword>")$/;"	m
+<Nul><Nul>g	tests/Session.vim	/^nmap <Nul><Nul>g :vert scs find g =expand("<cword>")$/;"	m
 <Nul><Nul>i	Session.vim	/^nmap <Nul><Nul>i :vert scs find i ^=expand("<cfile>")$/;"	m
+<Nul><Nul>i	tests/Session.vim	/^nmap <Nul><Nul>i :vert scs find i ^=expand("<cfile>")$/;"	m
 <Nul><Nul>s	Session.vim	/^nmap <Nul><Nul>s :vert scs find s =expand("<cword>")$/;"	m
+<Nul><Nul>s	tests/Session.vim	/^nmap <Nul><Nul>s :vert scs find s =expand("<cword>")$/;"	m
 <Nul><Nul>t	Session.vim	/^nmap <Nul><Nul>t :vert scs find t =expand("<cword>")$/;"	m
+<Nul><Nul>t	tests/Session.vim	/^nmap <Nul><Nul>t :vert scs find t =expand("<cword>")$/;"	m
 <Nul>c	Session.vim	/^nmap <Nul>c :scs find c =expand("<cword>")$/;"	m
+<Nul>c	tests/Session.vim	/^nmap <Nul>c :scs find c =expand("<cword>")$/;"	m
 <Nul>d	Session.vim	/^nmap <Nul>d :scs find d =expand("<cword>")$/;"	m
+<Nul>d	tests/Session.vim	/^nmap <Nul>d :scs find d =expand("<cword>")$/;"	m
 <Nul>e	Session.vim	/^nmap <Nul>e :scs find e =expand("<cword>")$/;"	m
+<Nul>e	tests/Session.vim	/^nmap <Nul>e :scs find e =expand("<cword>")$/;"	m
 <Nul>f	Session.vim	/^nmap <Nul>f :scs find f =expand("<cfile>")$/;"	m
+<Nul>f	tests/Session.vim	/^nmap <Nul>f :scs find f =expand("<cfile>")$/;"	m
 <Nul>g	Session.vim	/^nmap <Nul>g :scs find g =expand("<cword>")$/;"	m
+<Nul>g	tests/Session.vim	/^nmap <Nul>g :scs find g =expand("<cword>")$/;"	m
 <Nul>i	Session.vim	/^nmap <Nul>i :scs find i ^=expand("<cfile>")$/;"	m
+<Nul>i	tests/Session.vim	/^nmap <Nul>i :scs find i ^=expand("<cfile>")$/;"	m
 <Nul>s	Session.vim	/^nmap <Nul>s :scs find s =expand("<cword>")$/;"	m
+<Nul>s	tests/Session.vim	/^nmap <Nul>s :scs find s =expand("<cword>")$/;"	m
 <Nul>t	Session.vim	/^nmap <Nul>t :scs find t =expand("<cword>")$/;"	m
+<Nul>t	tests/Session.vim	/^nmap <Nul>t :scs find t =expand("<cword>")$/;"	m
 <Plug>CalendarH	Session.vim	/^nnoremap <silent> <Plug>CalendarH :cal Calendar(1)$/;"	m
+<Plug>CalendarH	tests/Session.vim	/^nnoremap <silent> <Plug>CalendarH :cal Calendar(1)$/;"	m
 <Plug>CalendarV	Session.vim	/^nnoremap <silent> <Plug>CalendarV :cal Calendar(0)$/;"	m
+<Plug>CalendarV	tests/Session.vim	/^nnoremap <silent> <Plug>CalendarV :cal Calendar(0)$/;"	m
 <Plug>NetrwBrowseX	Session.vim	/^nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)$/;"	m
+<Plug>NetrwBrowseX	tests/Session.vim	/^nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)$/;"	m
 <Plug>VCSAdd	Session.vim	/^nnoremap <silent> <Plug>VCSAdd :VCSAdd$/;"	m
+<Plug>VCSAdd	tests/Session.vim	/^nnoremap <silent> <Plug>VCSAdd :VCSAdd$/;"	m
 <Plug>VCSAnnotate	Session.vim	/^nnoremap <silent> <Plug>VCSAnnotate :VCSAnnotate$/;"	m
+<Plug>VCSAnnotate	tests/Session.vim	/^nnoremap <silent> <Plug>VCSAnnotate :VCSAnnotate$/;"	m
 <Plug>VCSClearAndGotoOriginal	Session.vim	/^nnoremap <silent> <Plug>VCSClearAndGotoOriginal :VCSGotoOriginal!$/;"	m
+<Plug>VCSClearAndGotoOriginal	tests/Session.vim	/^nnoremap <silent> <Plug>VCSClearAndGotoOriginal :VCSGotoOriginal!$/;"	m
 <Plug>VCSCommit	Session.vim	/^nnoremap <silent> <Plug>VCSCommit :VCSCommit$/;"	m
+<Plug>VCSCommit	tests/Session.vim	/^nnoremap <silent> <Plug>VCSCommit :VCSCommit$/;"	m
 <Plug>VCSDelete	Session.vim	/^nnoremap <silent> <Plug>VCSDelete :VCSDelete$/;"	m
+<Plug>VCSDelete	tests/Session.vim	/^nnoremap <silent> <Plug>VCSDelete :VCSDelete$/;"	m
 <Plug>VCSDiff	Session.vim	/^nnoremap <silent> <Plug>VCSDiff :VCSDiff$/;"	m
+<Plug>VCSDiff	tests/Session.vim	/^nnoremap <silent> <Plug>VCSDiff :VCSDiff$/;"	m
 <Plug>VCSGotoOriginal	Session.vim	/^nnoremap <silent> <Plug>VCSGotoOriginal :VCSGotoOriginal$/;"	m
+<Plug>VCSGotoOriginal	tests/Session.vim	/^nnoremap <silent> <Plug>VCSGotoOriginal :VCSGotoOriginal$/;"	m
 <Plug>VCSInfo	Session.vim	/^nnoremap <silent> <Plug>VCSInfo :VCSInfo$/;"	m
+<Plug>VCSInfo	tests/Session.vim	/^nnoremap <silent> <Plug>VCSInfo :VCSInfo$/;"	m
 <Plug>VCSLock	Session.vim	/^nnoremap <silent> <Plug>VCSLock :VCSLock$/;"	m
+<Plug>VCSLock	tests/Session.vim	/^nnoremap <silent> <Plug>VCSLock :VCSLock$/;"	m
 <Plug>VCSLog	Session.vim	/^nnoremap <silent> <Plug>VCSLog :VCSLog$/;"	m
+<Plug>VCSLog	tests/Session.vim	/^nnoremap <silent> <Plug>VCSLog :VCSLog$/;"	m
 <Plug>VCSRevert	Session.vim	/^nnoremap <silent> <Plug>VCSRevert :VCSRevert$/;"	m
+<Plug>VCSRevert	tests/Session.vim	/^nnoremap <silent> <Plug>VCSRevert :VCSRevert$/;"	m
 <Plug>VCSReview	Session.vim	/^nnoremap <silent> <Plug>VCSReview :VCSReview$/;"	m
+<Plug>VCSReview	tests/Session.vim	/^nnoremap <silent> <Plug>VCSReview :VCSReview$/;"	m
 <Plug>VCSSplitAnnotate	Session.vim	/^nnoremap <silent> <Plug>VCSSplitAnnotate :VCSAnnotate!$/;"	m
+<Plug>VCSSplitAnnotate	tests/Session.vim	/^nnoremap <silent> <Plug>VCSSplitAnnotate :VCSAnnotate!$/;"	m
 <Plug>VCSStatus	Session.vim	/^nnoremap <silent> <Plug>VCSStatus :VCSStatus$/;"	m
+<Plug>VCSStatus	tests/Session.vim	/^nnoremap <silent> <Plug>VCSStatus :VCSStatus$/;"	m
 <Plug>VCSUnlock	Session.vim	/^nnoremap <silent> <Plug>VCSUnlock :VCSUnlock$/;"	m
+<Plug>VCSUnlock	tests/Session.vim	/^nnoremap <silent> <Plug>VCSUnlock :VCSUnlock$/;"	m
 <Plug>VCSUpdate	Session.vim	/^nnoremap <silent> <Plug>VCSUpdate :VCSUpdate$/;"	m
+<Plug>VCSUpdate	tests/Session.vim	/^nnoremap <silent> <Plug>VCSUpdate :VCSUpdate$/;"	m
 <Plug>VCSVimDiff	Session.vim	/^nnoremap <silent> <Plug>VCSVimDiff :VCSVimDiff$/;"	m
+<Plug>VCSVimDiff	tests/Session.vim	/^nnoremap <silent> <Plug>VCSVimDiff :VCSVimDiff$/;"	m
 <S-Tab>	Session.vim	/^inoremap <silent> <S-Tab> =BackwardsSnippet()$/;"	m
+<S-Tab>	tests/Session.vim	/^inoremap <silent> <S-Tab> =BackwardsSnippet()$/;"	m
 ANIMATION_DELAY	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		static final int ANIMATION_DELAY = 10;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable
 ANIMATION_DURATION_MS	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		static final int ANIMATION_DURATION_MS = 300;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable
 ANIMATION_OVERSHOOT_TENSION	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		static final float ANIMATION_OVERSHOOT_TENSION = 2.0f;$/;"	f	class:PullToRefreshBase.SmoothScrollRunnable
 BOTH	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		BOTH(0x3);$/;"	e	enum:PullToRefreshBase.Mode	file:
 BUNDLE_BEAN_LIST	src/hongbosb/tbdemo/MainActivity.java	/^    static public final String BUNDLE_BEAN_LIST = "bean_list";$/;"	f	class:MainActivity
 BeanGenerator	src/hongbosb/tbdemo/XmlParser.java	/^    public static class BeanGenerator {$/;"	c	class:XmlParser
+BuildConfig	gen/hongbosb/tbdemo/BuildConfig.java	/^public final class BuildConfig {$/;"	c
 BuildConfig	libs/gen/com/handmark/pulltorefresh/library/BuildConfig.java	/^public final class BuildConfig {$/;"	c
+BuildConfig	tests/gen/hongbosb/tbdemo/tests/BuildConfig.java	/^public final class BuildConfig {$/;"	c
 CREATOR	src/hongbosb/tbdemo/RssBean.java	/^    public static final Parcelable.Creator<RssBean> CREATOR$/;"	f	class:RssBean
 Config	src/hongbosb/tbdemo/Config.java	/^public class Config {$/;"	c
+DEBUG	gen/hongbosb/tbdemo/BuildConfig.java	/^    public final static boolean DEBUG = true;$/;"	f	class:BuildConfig
 DEBUG	libs/gen/com/handmark/pulltorefresh/library/BuildConfig.java	/^    public final static boolean DEBUG = true;$/;"	f	class:BuildConfig
 DEBUG	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final boolean DEBUG = false;$/;"	f	class:PullToRefreshBase
+DEBUG	tests/gen/hongbosb/tbdemo/tests/BuildConfig.java	/^    public final static boolean DEBUG = true;$/;"	f	class:BuildConfig
 DEFAULT_MODE	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final Mode DEFAULT_MODE = Mode.PULL_DOWN_TO_REFRESH;$/;"	f	class:PullToRefreshBase
 DEFAULT_ROTATION_ANIMATION_DURATION	libs/src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	static final int DEFAULT_ROTATION_ANIMATION_DURATION = 150;$/;"	f	class:IndicatorLayout
 DEFAULT_ROTATION_ANIMATION_DURATION	libs/src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	static final int DEFAULT_ROTATION_ANIMATION_DURATION = 600;$/;"	f	class:LoadingLayout
@@ -247,6 +455,7 @@ LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := $(call all-java-files-under, src
 LOG_TAG	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final String LOG_TAG = "PullToRefresh";$/;"	f	class:PullToRefreshBase
 LazyAdapter	src/hongbosb/tbdemo/LazyAdapter.java	/^    public LazyAdapter(Activity a, String[] strs) {$/;"	m	class:LazyAdapter
 LazyAdapter	src/hongbosb/tbdemo/LazyAdapter.java	/^class LazyAdapter extends BaseAdapter {$/;"	c
+ListUtils	src/hongbosb/tbdemo/utils/ListUtils.java	/^public class ListUtils {$/;"	c
 LoadHandler	src/hongbosb/tbdemo/ImageLoader.java	/^        public LoadHandler(ImageView image, String url) {$/;"	m	class:ImageLoader.LoadHandler
 LoadHandler	src/hongbosb/tbdemo/ImageLoader.java	/^    class LoadHandler implements Runnable {$/;"	c	class:ImageLoader
 LoaderHandler	src/hongbosb/tbdemo/MainActivity.java	/^        public LoaderHandler() {$/;"	m	class:MainActivity.LoaderHandler
@@ -256,8 +465,7 @@ LoadingLayout	libs/src/com/handmark/pulltorefresh/library/internal/LoadingLayout
 MANUAL_REFRESHING	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final int MANUAL_REFRESHING = 0x3;$/;"	f	class:PullToRefreshBase
 MESSAGE_REFRESH_ADAPTER	src/hongbosb/tbdemo/MainActivity.java	/^    static public final int MESSAGE_REFRESH_ADAPTER = 0;$/;"	f	class:MainActivity
 MainActivity	src/hongbosb/tbdemo/MainActivity.java	/^public class MainActivity extends Activity implements Callback {$/;"	c
-MainActivityTest	tests/src/hongbosb/tbdemo/MainActivityTest.java	/^    public MainActivityTest() {$/;"	m	class:MainActivityTest
-MainActivityTest	tests/src/hongbosb/tbdemo/MainActivityTest.java	/^public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {$/;"	c
+MainTest	tests/src/hongbosb/tbdemo/MainTest.java	/^public class MainTest extends AndroidTestCase {$/;"	c
 MemoryCache	src/hongbosb/tbdemo/ImageLoader.java	/^    class MemoryCache {$/;"	c	class:ImageLoader
 Mode	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		Mode(int modeInt) {$/;"	m	class:PullToRefreshBase.Mode
 Mode	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public static enum Mode {$/;"	g	class:PullToRefreshBase
@@ -331,6 +539,7 @@ STATE_SHOW_REFRESHING_VIEW	libs/src/com/handmark/pulltorefresh/library/PullToRef
 STATE_STATE	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final String STATE_STATE = "ptr_state";$/;"	f	class:PullToRefreshBase
 STATE_SUPER	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	static final String STATE_SUPER = "ptr_super";$/;"	f	class:PullToRefreshBase
 SessionLoad	Session.vim	/^let SessionLoad = 1$/;"	v
+SessionLoad	tests/Session.vim	/^let SessionLoad = 1$/;"	v
 SmoothScrollRunnable	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public SmoothScrollRunnable(int fromY, int toY) {$/;"	m	class:PullToRefreshBase.SmoothScrollRunnable
 SmoothScrollRunnable	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	final class SmoothScrollRunnable implements Runnable {$/;"	c	class:PullToRefreshBase
 TAG	src/hongbosb/tbdemo/ImageLoader.java	/^    static public final String TAG = "ImageLoader";$/;"	f	class:ImageLoader
@@ -339,9 +548,12 @@ Utils	src/hongbosb/tbdemo/Utils.java	/^class Utils {$/;"	c
 XmlParser	src/hongbosb/tbdemo/XmlParser.java	/^    public XmlParser(String content) {$/;"	m	class:XmlParser
 XmlParser	src/hongbosb/tbdemo/XmlParser.java	/^public class XmlParser {$/;"	c
 [%	Session.vim	/^vmap [% [%m'gv``$/;"	m
+[%	tests/Session.vim	/^vmap [% [%m'gv``$/;"	m
 ]%	Session.vim	/^vmap ]% ]%m'gv``$/;"	m
+]%	tests/Session.vim	/^vmap ]% ]%m'gv``$/;"	m
 a%	Session.vim	/^vmap a% [%v]%$/;"	m
-addBeans	src/hongbosb/tbdemo/MainActivity.java	/^        private void addBeans(Set<RssBean> beans) {$/;"	m	class:MainActivity.FlowAdapter	file:
+a%	tests/Session.vim	/^vmap a% [%v]%$/;"	m
+addBeans	src/hongbosb/tbdemo/MainActivity.java	/^        public void addBeans(List<RssBean> beans) {$/;"	m	class:MainActivity.FlowAdapter
 addDataToAdapter	src/hongbosb/tbdemo/MainActivity.java	/^    private void addDataToAdapter(List<RssBean> beans) {$/;"	m	class:MainActivity	file:
 addIndicatorViews	libs/src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	private void addIndicatorViews() {$/;"	m	class:PullToRefreshAdapterViewBase	file:
 addRefreshableView	libs/src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void addRefreshableView(Context context, T refreshableView) {$/;"	m	class:PullToRefreshAdapterViewBase
@@ -384,12 +596,14 @@ createRefreshableView	libs/src/com/handmark/pulltorefresh/library/PullToRefreshE
 createRefreshableView	libs/src/com/handmark/pulltorefresh/library/PullToRefreshGridView.java	/^	protected final GridView createRefreshableView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshGridView
 createRefreshableView	libs/src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^	protected final ListView createRefreshableView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshListView
 createRefreshableView	libs/src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^	protected WebView createRefreshableView(Context context, AttributeSet attrs) {$/;"	m	class:PullToRefreshWebView
+date	src/hongbosb/tbdemo/RssBean.java	/^    public long date;$/;"	f	class:RssBean
 defaultOnRefreshListener	libs/src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^	private static final OnRefreshListener<WebView> defaultOnRefreshListener = new OnRefreshListener<WebView>() {$/;"	f	class:PullToRefreshWebView	file:
 defaultWebChromeClient	libs/src/com/handmark/pulltorefresh/library/PullToRefreshWebView.java	/^	private final WebChromeClient defaultWebChromeClient = new WebChromeClient() {$/;"	f	class:PullToRefreshWebView	file:
 default_ptr_drawable	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int default_ptr_drawable=0x7f020002;$/;"	f	class:R.drawable
 default_ptr_drawable	gen/hongbosb/tbdemo/R.java	/^        public static final int default_ptr_drawable=0x7f020002;$/;"	f	class:R.drawable
 default_ptr_drawable	libs/gen/com/handmark/pulltorefresh/library/R.java	/^        public static int default_ptr_drawable=0x7f020002;$/;"	f	class:R.drawable
 describeContents	src/hongbosb/tbdemo/RssBean.java	/^    public int describeContents() {$/;"	m	class:RssBean
+diff	src/hongbosb/tbdemo/utils/ListUtils.java	/^    public static void diff(List<RssBean> b1, List<RssBean> b2) {$/;"	m	class:ListUtils
 dimen	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class dimen {$/;"	c	class:R
 dimen	gen/hongbosb/tbdemo/R.java	/^    public static final class dimen {$/;"	c	class:R
 dimen	libs/gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class dimen {$/;"	c	class:R
@@ -401,6 +615,7 @@ draw	libs/src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^		
 drawable	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class drawable {$/;"	c	class:R
 drawable	gen/hongbosb/tbdemo/R.java	/^    public static final class drawable {$/;"	c	class:R
 drawable	libs/gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class drawable {$/;"	c	class:R
+equals	src/hongbosb/tbdemo/RssBean.java	/^    public boolean equals(Object o) {$/;"	m	class:RssBean
 flow_item	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int flow_item=0x7f030000;$/;"	f	class:R.layout
 flow_item	gen/hongbosb/tbdemo/R.java	/^        public static final int flow_item=0x7f030000;$/;"	f	class:R.layout
 get	src/hongbosb/tbdemo/ImageLoader.java	/^        private Bitmap get(String url) {$/;"	m	class:ImageLoader.MemoryCache	file:
@@ -441,13 +656,17 @@ getView	src/hongbosb/tbdemo/MainActivity.java	/^        public View getView(int 
 gridview	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int gridview=0x7f050004;$/;"	f	class:R.id
 gridview	gen/hongbosb/tbdemo/R.java	/^        public static final int gridview=0x7f050004;$/;"	f	class:R.id
 gridview	libs/gen/com/handmark/pulltorefresh/library/R.java	/^        public static int gridview=0x7f050004;$/;"	f	class:R.id
+guid	src/hongbosb/tbdemo/RssBean.java	/^    public String guid;$/;"	f	class:RssBean
 gx	Session.vim	/^nmap gx <Plug>NetrwBrowseX$/;"	m
+gx	tests/Session.vim	/^nmap gx <Plug>NetrwBrowseX$/;"	m
 handleMessage	src/hongbosb/tbdemo/MainActivity.java	/^        public boolean handleMessage(Message msg) {$/;"	m	class:MainActivity.LoaderHandler
 handleMessage	src/hongbosb/tbdemo/MainActivity.java	/^    public boolean handleMessage(Message msg) {$/;"	m	class:MainActivity
 handleStyledAttributes	libs/src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	protected void handleStyledAttributes(TypedArray a) {$/;"	m	class:PullToRefreshAdapterViewBase
 handleStyledAttributes	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	protected void handleStyledAttributes(TypedArray a) {$/;"	m	class:PullToRefreshBase
 hasPullFromTop	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final boolean hasPullFromTop() {$/;"	m	class:PullToRefreshBase
+hashCode	src/hongbosb/tbdemo/RssBean.java	/^    public int hashCode() {$/;"	m	class:RssBean
 hide	libs/src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java	/^	public void hide() {$/;"	m	class:IndicatorLayout
+hongbosb.tbdemo	gen/hongbosb/tbdemo/BuildConfig.java	/^package hongbosb.tbdemo;$/;"	p
 hongbosb.tbdemo	gen/hongbosb/tbdemo/R.java	/^package hongbosb.tbdemo;$/;"	p
 hongbosb.tbdemo	src/hongbosb/tbdemo/Config.java	/^package hongbosb.tbdemo;$/;"	p
 hongbosb.tbdemo	src/hongbosb/tbdemo/FileCache.java	/^package hongbosb.tbdemo;$/;"	p
@@ -458,7 +677,9 @@ hongbosb.tbdemo	src/hongbosb/tbdemo/MainActivity.java	/^package hongbosb.tbdemo;
 hongbosb.tbdemo	src/hongbosb/tbdemo/RssBean.java	/^package hongbosb.tbdemo;$/;"	p
 hongbosb.tbdemo	src/hongbosb/tbdemo/Utils.java	/^package hongbosb.tbdemo;$/;"	p
 hongbosb.tbdemo	src/hongbosb/tbdemo/XmlParser.java	/^package hongbosb.tbdemo;$/;"	p
-hongbosb.tbdemo	tests/src/hongbosb/tbdemo/MainActivityTest.java	/^package hongbosb.tbdemo;$/;"	p
+hongbosb.tbdemo	src/hongbosb/tbdemo/utils/ListUtils.java	/^package hongbosb.tbdemo;$/;"	p
+hongbosb.tbdemo	tests/src/hongbosb/tbdemo/MainTest.java	/^package hongbosb.tbdemo;$/;"	p
+hongbosb.tbdemo.tests	tests/gen/hongbosb/tbdemo/tests/BuildConfig.java	/^package hongbosb.tbdemo.tests;$/;"	p
 id	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class id {$/;"	c	class:R
 id	gen/hongbosb/tbdemo/R.java	/^    public static final class id {$/;"	c	class:R
 id	libs/gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class id {$/;"	c	class:R
@@ -496,6 +717,7 @@ isVisible	libs/src/com/handmark/pulltorefresh/library/internal/IndicatorLayout.j
 layout	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class layout {$/;"	c	class:R
 layout	gen/hongbosb/tbdemo/R.java	/^    public static final class layout {$/;"	c	class:R
 layout	libs/gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class layout {$/;"	c	class:R
+link	src/hongbosb/tbdemo/RssBean.java	/^    public String link;$/;"	f	class:RssBean
 list	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int list=0x7f050007;$/;"	f	class:R.id
 list	gen/hongbosb/tbdemo/R.java	/^        public static final int list=0x7f050007;$/;"	f	class:R.id
 loadContent	src/hongbosb/tbdemo/MainActivity.java	/^        private String loadContent() {$/;"	m	class:MainActivity.LoaderHandler	file:
@@ -680,10 +902,15 @@ resetImageRotation	libs/src/com/handmark/pulltorefresh/library/internal/LoadingL
 run	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^		public void run() {$/;"	m	class:PullToRefreshBase.SmoothScrollRunnable
 run	src/hongbosb/tbdemo/ImageLoader.java	/^        public void run() {$/;"	m	class:ImageLoader.LoadHandler
 s:cpo_save	Session.vim	/^let s:cpo_save=&cpo$/;"	v
-s:l	Session.vim	/^let s:l = 91 - ((25 * winheight(0) + 24) \/ 49)$/;"	v
+s:cpo_save	tests/Session.vim	/^let s:cpo_save=&cpo$/;"	v
+s:l	Session.vim	/^let s:l = 92 - ((26 * winheight(0) + 24) \/ 49)$/;"	v
+s:l	tests/Session.vim	/^let s:l = 30 - ((29 * winheight(0) + 24) \/ 49)$/;"	v
 s:so_save	Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
+s:so_save	tests/Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
 s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:sx	tests/Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
 s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+s:wipebuf	tests/Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
 setAdapter	libs/src/com/handmark/pulltorefresh/library/PullToRefreshListView.java	/^		public void setAdapter(ListAdapter adapter) {$/;"	m	class:PullToRefreshListView.InternalListView
 setDisableScrollingWhileRefreshing	libs/src/com/handmark/pulltorefresh/library/PullToRefreshBase.java	/^	public final void setDisableScrollingWhileRefreshing(boolean disableScrollingWhileRefreshing) {$/;"	m	class:PullToRefreshBase
 setEmptyView	libs/src/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java	/^	public final void setEmptyView(View newEmptyView) {$/;"	m	class:PullToRefreshAdapterViewBase
@@ -755,6 +982,7 @@ string	libs/gen/com/handmark/pulltorefresh/library/R.java	/^    public static fi
 styleable	gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class styleable {$/;"	c	class:R
 styleable	gen/hongbosb/tbdemo/R.java	/^    public static final class styleable {$/;"	c	class:R
 styleable	libs/gen/com/handmark/pulltorefresh/library/R.java	/^    public static final class styleable {$/;"	c	class:R
+testRssBean	tests/src/hongbosb/tbdemo/MainTest.java	/^    public void testRssBean() throws Exception {$/;"	m	class:MainTest
 title	gen/com/handmark/pulltorefresh/library/R.java	/^        public static final int title=0x7f050008;$/;"	f	class:R.id
 title	gen/hongbosb/tbdemo/R.java	/^        public static final int title=0x7f050008;$/;"	f	class:R.id
 title	src/hongbosb/tbdemo/RssBean.java	/^    public String title;$/;"	f	class:RssBean
@@ -768,7 +996,12 @@ webview	libs/gen/com/handmark/pulltorefresh/library/R.java	/^        public stat
 wrapHtmlLabel	libs/src/com/handmark/pulltorefresh/library/internal/LoadingLayout.java	/^	private CharSequence wrapHtmlLabel(String label) {$/;"	m	class:LoadingLayout	file:
 writeToParcel	src/hongbosb/tbdemo/RssBean.java	/^    public void writeToParcel(Parcel out, int flag) {$/;"	m	class:RssBean
 zt	Session.vim	/^normal! zt$/;"	m
+zt	tests/Session.vim	/^normal! zt$/;"	m
 ê	Session.vim	/^nmap ê mz:m+$/;"	m
 ê	Session.vim	/^vmap ê :m'>+$/;"	m
+ê	tests/Session.vim	/^nmap ê mz:m+$/;"	m
+ê	tests/Session.vim	/^vmap ê :m'>+$/;"	m
 ë	Session.vim	/^nmap ë mz:m-2$/;"	m
 ë	Session.vim	/^vmap ë :m'<-2$/;"	m
+ë	tests/Session.vim	/^nmap ë mz:m-2$/;"	m
+ë	tests/Session.vim	/^vmap ë :m'<-2$/;"	m

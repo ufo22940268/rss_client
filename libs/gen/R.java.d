@@ -27,4 +27,8 @@
 /Users/ccheng/workspace_tb/rss_client/libs/res/values-pt-rBR/pull_refresh_strings.xml \
 /Users/ccheng/workspace_tb/rss_client/libs/res/values-ru/pull_refresh_strings.xml \
 /Users/ccheng/workspace_tb/rss_client/libs/res/values-zh/pull_refresh_strings.xml \
+/Users/ccheng/workspace_tb/rss_client/libs/bin/res/drawable-hdpi/default_ptr_drawable.png \
+/Users/ccheng/workspace_tb/rss_client/libs/bin/res/drawable-xhdpi/arrow_down.png \
+/Users/ccheng/workspace_tb/rss_client/libs/bin/res/drawable-xhdpi/arrow_up.png \
+/Users/ccheng/workspace_tb/rss_client/libs/bin/res/drawable-xhdpi/default_ptr_drawable.png \
 /Users/ccheng/workspace_tb/rss_client/libs/bin/AndroidManifest.xml \
